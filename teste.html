@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateus Soares Brito - Perfil Profissional</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        a {
+            text-decoration: none;
+            color: #3498db;
+            transition: color 0.3s ease-in-out;
+        }
+        a:hover {
+            color: #1abc9c;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background: linear-gradient(to right, #3498db, #1abc9c);
+            color: #fff;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+            margin-right: 20px;
+        }
+        .profile-image:hover {
+            transform: scale(1.1);
+        }
+        .header-text {
+            flex: 1;
+            text-align: center;
+        }
+        .header-text h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        .header-text p {
+            font-size: 1.2rem;
+        }
+        .section-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .section-links a {
+            padding: 10px 15px;
+            background-color: #1abc9c;
+            color: #fff;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .section-links a:hover {
+            background-color: #16a085;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #1abc9c;
+            padding-bottom: 5px;
+        }
+        section ul {
+            list-style: none;
+            padding: 0;
+        }
+        section ul li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        section ul li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            color: #1abc9c;
+            font-weight: bold;
+        }
+
+        .portfolio img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .portfolio img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #2c3e50;
+            color: #fff;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        footer p {
+            margin: 0;
+        }
+        .social-icons {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .social-icons a {
+            margin: 0 15px;
+            display: inline-block;
+            transition: transform 0.3s ease-in-out;
+        }
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+        }
+        video {
+            display: block;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="imagens/fotomateus.png" alt="Foto de Mateus" class="profile-image">
+            <div class="header-text">
+                <h1>Mateus Soares Brito</h1>
+                <p>Desenvolvedor Full Stack 🚀</p>
+            </div>
+        </header>
+
+        <div class="section-links">
+            <a href="#biografia">Biografia</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#experiencias-academicas">Experiências Acadêmicas</a>
+            <a href="#experiencias-profissionais">Experiências Profissionais</a>
+            <a href="#ferramentas-tecnologias">Ferramentas e Tecnologias</a>
+        </div>
+
+        <section id="biografia">
+            <h2>Biografia</h2>
+            <p>Sou apaixonado por tecnologia e atualmente atuo como desenvolvedor de soluções inteligentes no squad de integração entre APIs. Minha paixão por desenvolvimento me levou a buscar a formação em Engenharia de Software, onde continuo explorando esse universo fascinante.</p>
+        </section>
+        
+        <section id="portfolio">
+            <h2>Portfólio</h2>
+            <h3>Site para um Corretor Imobiliário</h3>
+            <a href="https://lucasagenteimobiliario.com/" target="_blank">
+                <img src="imagens/portifolio1.png" alt="Site para Corretor Imobiliário">
+            </a>
+            <video controls width="800">
+                <source src="videos/apresentacaoportifolio1.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos.
+            </video>
+            <h3>Gerenciador de Tarefas Inteligente</h3>
+            <a href="https://apptaskminder.netlify.app/" target="_blank">
+                <img src="imagens/portifolio2.png" alt="Gerenciador de Tarefas">
+            </a>
+            <video controls width="800">
+                <source src="videos/apresentacaoportifolio2.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos.
+            </video>
+        </section>
+        
+        <section id="experiencias-academicas">
+            <h2>Experiências Acadêmicas</h2>
+            <ul>
+                <li>Graduação em Logística, Unicesumar (2014-2016).</li>
+                <li>Pós-graduação em Gestão Comercial, Unicesumar (2018-2020).</li>
+                <li>Engenharia de Software, Unicesumar (2023-2026).</li>
+                <li>Pós em Desenvolvimento de Aplicativos com Java (Concluído 2024).</li>
+            </ul>
+        </section>
+        
+        <section id="experiencias-profissionais">
+            <h2>Experiências Profissionais</h2>
+            <p><strong>Aliare:</strong> Atuo como Analista de Produto, facilitando a integração de sistemas e apoiando o desenvolvimento de soluções personalizadas para o agronegócio.</p>
+            <p><strong>Bocchi Atacado:</strong> Experiência em logística, atendimento ao cliente e gestão comercial, desenvolvendo estratégias que impactaram diretamente no crescimento da empresa.</p>
+        </section>
+        
+        <section id="ferramentas-tecnologias">
+            <h2>Ferramentas e Tecnologias</h2>
+            <ul>
+                <li><strong>Git:</strong> Controle de versão para colaboração.</li>
+                <li><strong>DBeaver, MySql, MongoDB:</strong> Gerenciamento de bancos de dados.</li>
+                <li><strong>JavaScript, Java, CSS e HTML:</strong> Desenvolvimento front-end e back-end.</li>
+                <li><strong>Cypress:</strong> Automação de testes.</li>
+                <li><strong>Postman:</strong> Testes de endpoints.</li>
+                <li><strong>React, Node.js:</strong> Desenvolvimento de aplicações web dinâmicas.</li>
+                <li><strong>Docker:</strong> Criação de ambientes isolados para desenvolvimento e produção.</li>
+                <li><strong>AWS:</strong> Infraestrutura em nuvem para escalabilidade e performance.</li>
+            </ul>
+        </section>
+
+        <footer>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/maateus1994" target="_blank">
+                    <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram">
+                </a>
+                <a href="https://www.linkedin.com/in/mateus-brito" target="_blank">
+                    <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/maateusbrito" target="_blank">
+                    <img src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub">
+                </a>
+            </div>
+            <p>&copy; 2025 Mateus Soares Brito - Todos os direitos reservados.</p>
+        </footer>
+        </div>
+    </div>
+</body>
+</html>

@@ -31,19 +31,53 @@
             padding: 20px;
         }
         header {
-            text-align: center;
+            display: flex;
+            align-items: center;
             padding: 20px;
             background: linear-gradient(to right, #3498db, #1abc9c);
             color: #fff;
             border-radius: 8px;
             margin-bottom: 30px;
         }
-        header h1 {
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+            margin-right: 20px;
+        }
+        .profile-image:hover {
+            transform: scale(1.1);
+        }
+        .header-text {
+            flex: 1;
+            text-align: center;
+        }
+        .header-text h1 {
             font-size: 2.5rem;
             margin: 0;
         }
-        header p {
+        .header-text p {
             font-size: 1.2rem;
+        }
+        .section-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .section-links a {
+            padding: 10px 15px;
+            background-color: #1abc9c;
+            color: #fff;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .section-links a:hover {
+            background-color: #16a085;
         }
         section {
             margin-bottom: 30px;
@@ -70,16 +104,21 @@
             color: #1abc9c;
             font-weight: bold;
         }
+
         .portfolio img {
-            max-width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-            transition: transform 0.3s ease-in-out;
-        }
-        .portfolio img:hover {
-            transform: scale(1.05);
-        }
+    max-width: 100%;  /* Ajusta a largura da imagem para não ultrapassar o contêiner */
+    height: auto;     /* Mantém a proporção da imagem */
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio img:hover {
+    transform: scale(1.05);
+}
+
+
         footer {
             text-align: center;
             padding: 15px;
@@ -118,13 +157,24 @@
 <body>
     <div class="container">
         <header>
-            <h1>Mateus Soares Brito</h1>
-            <p>Desenvolvedor Full Stack 🚀</p>
+            <img src="imagens/fotomateus.png" alt="Foto de Mateus" class="profile-image">
+            <div class="header-text">
+                <h1>Mateus Soares Brito</h1>
+                <p>Desenvolvedor Full Stack 🚀</p>
+            </div>
         </header>
-        
+
+        <div class="section-links">
+            <a href="#biografia">Biografia</a>
+            <a href="#portfólio">Portfólio</a>
+            <a href="#experiencias-academicas">Experiências Acadêmicas</a>
+            <a href="#experiencias-profissionais">Experiências Profissionais</a>
+            <a href="#ferramentas-tecnologias">Ferramentas e Tecnologias</a>
+        </div>
+
         <section id="biografia">
             <h2>Biografia</h2>
-            <p>Sou apaixonado por tecnologia e atualmente atuo como desenvolvedor de soluções inteligentes no squad de integração de banco de dados entre APIs. Minha paixão por desenvolvimento me levou a buscar a formação em Engenharia de Software, onde continuo explorando esse universo fascinante.</p>
+            <p>Sou apaixonado por tecnologia e atualmente atuo como desenvolvedor de soluções inteligentes no squad de integração entre APIs. Minha paixão por desenvolvimento me levou a buscar a formação em Engenharia de Software, onde continuo explorando esse universo fascinante.</p>
         </section>
         
         <section class="portfolio">
@@ -147,7 +197,7 @@
             </video>
         </section>
         
-        <section>
+        <section id="experiencias-academicas">
             <h2>Experiências Acadêmicas</h2>
             <ul>
                 <li>Graduação em Logística, Unicesumar (2014-2016).</li>
@@ -157,13 +207,13 @@
             </ul>
         </section>
         
-        <section>
+        <section id="experiencias-profissionais">
             <h2>Experiências Profissionais</h2>
-            <p><strong>Aliare:</strong> Atuo como Analista de Produto, facilitando a integração de sistemas e apoiando o desenvolvimento de soluções personalizadas para o agronegócio.</p>
-            <p><strong>Bocchi Atacado:</strong> Experiência em logística, atendimento ao cliente e gestão comercial, desenvolvendo estratégias que impactaram diretamente no crescimento da empresa.</p>
+            <p><strong>Aliare:</strong> Atuo como Desenvolvedor na integração de sistemas e soluções personalizadas para o agronegócio.</p>
+            <p><strong>Bocchi Atacado:</strong> Atuei como Gerente Comercial, sendo responsavel por contratações, distratos, reuniões, metas e desenvolvimento de estratégias que impactaram diretamente no crescimento da empresa.</p>
         </section>
         
-        <section>
+        <section id="ferramentas-tecnologias">
             <h2>Ferramentas e Tecnologias</h2>
             <ul>
                 <li><strong>Git:</strong> Controle de versão para colaboração.</li>
@@ -171,10 +221,12 @@
                 <li><strong>JavaScript, Java, CSS e HTML:</strong> Desenvolvimento front-end e back-end.</li>
                 <li><strong>Cypress:</strong> Automação de testes.</li>
                 <li><strong>Postman:</strong> Testes de endpoints.</li>
-                <li><strong>Intellij, NetBeans, VSCode: IDEs de desenvolvimento</strong> .</li>
+                <li><strong>React, Node.js:</strong> Desenvolvimento de aplicações web dinâmicas.</li>
+                <li><strong>Docker:</strong> Criação de ambientes isolados para desenvolvimento e produção.</li>
+                <li><strong>AWS:</strong> Infraestrutura em nuvem para escalabilidade e performance.</li>
             </ul>
         </section>
-        
+
         <footer>
             <div class="social-icons">
                 <a href="https://www.instagram.com/maateus1994" target="_blank">
@@ -189,6 +241,7 @@
             </div>
             <p>&copy; 2025 Mateus Soares Brito - Todos os direitos reservados.</p>
         </footer>
+        </div>
     </div>
 </body>
 </html>
