@@ -3,171 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Pessoal de Mateus Soares Brito</title>
+    <title>Mateus Soares Brito - Perfil Profissional</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
+            background-color: #f4f4f9;
             color: #333;
             line-height: 1.6;
         }
+        h1, h2, h3 {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        a {
+            text-decoration: none;
+            color: #3498db;
+            transition: color 0.3s ease-in-out;
+        }
+        a:hover {
+            color: #1abc9c;
+        }
         .container {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-            overflow: hidden;
         }
         header {
             text-align: center;
-            padding: 10px 0;
-            background-color: #ececec;
-            color: #070707;
-            margin-bottom: 20px;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
+            padding: 20px;
+            background: linear-gradient(to right, #3498db, #1abc9c);
+            color: #fff;
+            border-radius: 8px;
+            margin-bottom: 30px;
         }
         header h1 {
             font-size: 2.5rem;
-            margin-bottom: 10px;
+            margin: 0;
         }
         header p {
             font-size: 1.2rem;
-        }
-        .social-icons {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .social-icons a {
-            margin: 0 10px;
-            display: inline-block;
-            transition: transform 0.3s ease-in-out;
-        }
-        .social-icons a:hover {
-            transform: translateY(-5px);
-        }
-        .social-icons img {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
         }
         section {
             margin-bottom: 30px;
         }
         section h2 {
-            color: #007bff;
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 5px;
+            font-size: 1.8rem;
             margin-bottom: 15px;
+            border-bottom: 2px solid #1abc9c;
+            padding-bottom: 5px;
         }
-        section p, section ul {
-            text-align: justify;
+        section ul {
+            list-style: none;
+            padding: 0;
         }
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            background-color: #007bff;
-            color: #fff;
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
+        section ul li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        section ul li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            color: #1abc9c;
+            font-weight: bold;
         }
         .portfolio img {
             max-width: 100%;
-            border-radius: 5px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .portfolio img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #2c3e50;
+            color: #fff;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        footer p {
+            margin: 0;
+        }
+        .social-icons {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .social-icons a {
+            margin: 0 15px;
+            display: inline-block;
+            transition: transform 0.3s ease-in-out;
+        }
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+        }
+        video {
+            display: block;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Olá, Seja muito bem-vindo(a)! 🤖</h1>
+            <h1>Mateus Soares Brito</h1>
+            <p>Desenvolvedor Full Stack 🚀</p>
         </header>
         
         <section id="biografia">
             <h2>Biografia</h2>
-            <p>Bom, meu nome é Mateus Soares Brito, nasci em 1994 em Cascavel, Pr. E Desde muito cedo, gostava de jogos e tinha muita curiosidade em saber como funcionava tudo por trás das telas, redes sociais, sites, porém jamais passou pela minha cabeça entrar nesse mundo, de desenvolvimento de aplicativos e de sites...</p>
-            
-            <p>Minha trajetória profissional começou na área de transportes, trabalhando com a emissão de manifestos eletrônicos. Foi ali que tive meu primeiro contato com a logística e pude entender, na prática, como as operações funcionam de forma mais técnica.</p>
-            
-            <p>Depois, entrei em um Atacado que comercializava produtos alimenticíos, lá minhas oportunidades cresceram. Comecei na logística, passei pelo SAC (atendimento ao cliente) e depois no setor financeiro, até então por fim me tornar gerente comercial. Nesse cargo, consegui desenvolver e aplicar habilidades de gestão de equipes, planejamento estratégico de vendas e análise de mercado. Isso me permitiu alcançar metas importantes e contribuir diretamente para o crescimento da empresa, porém faltava alguma coisa, não estava contente com oque trabalhava, e comecei a correr atrás daquela paixão de criança, de trabalhar com técnologia... Comecei a ver cursos na internet, gostei muito e ingressei na faculdade de Engenharia de Software.</p>
-            
-            <p>Atualmente, estou focado na minha formação, essa formação que complementa a experiência prática que adquiri ao longo dos anos. Consegui finalmente ingressar no mercado de técnologia, atuando comoAnalista de Produto, em um Squad de Integração de banco de dados entre APIs, sou responsável por auxiliar na integração de sistemas. E estou realizando treinamento para o cargo de Analista de desenvolvimento Full Stack!!!</p>
-            
-            <p>Fora do trabalho, sou apaixonado por animes, séries, filmes de terror :OOO, jogos e praticar atividades físicas,</p>
-            <p>Bom esse foi um pouco de quem sou eu, abaixo tem alguns trabalhos que tenho em andamento e minha formação academia, foi te contar da minha trajetória até aqui!! 😊</p>
+            <p>Sou apaixonado por tecnologia e atualmente atuo como desenvolvedor de soluções inteligentes no squad de integração de banco de dados entre APIs. Minha paixão por desenvolvimento me levou a buscar a formação em Engenharia de Software, onde continuo explorando esse universo fascinante.</p>
         </section>
         
         <section class="portfolio">
             <h2>Portfólio</h2>
-            <h1>Site para um Corretor Imobiliário</h1>
+            <h3>Site para um Corretor Imobiliário</h3>
             <a href="https://lucasagenteimobiliario.com/" target="_blank">
-                <img src="imagens/portifolio1.png" alt="Portfólio de Corretor Imobiliário">
+                <img src="imagens/portifolio1.png" alt="Site para Corretor Imobiliário">
             </a>
-            <br>
-            <video controls width="1000">
-                <source src="videos/aprecentacaoportifolio1.mp4" type="video/mp4">
-                Seu navegador não suporta a exibição de vídeos.
+            <video controls width="800">
+                <source src="videos/apresentacaoportifolio1.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos.
             </video>
-            <br>
-            <h1>Gerenciador de Tarefas Inteligente</h1>
+            <h3>Gerenciador de Tarefas Inteligente</h3>
             <a href="https://apptaskminder.netlify.app/" target="_blank">
-                <img src="imagens/portifolio2.png" alt="Portfólio Gerenciador de Tarefas"></a>
-                <br>
-                <video controls width="1000">
-                    <source src="videos/apresentacaoportifolio2.mp4" type="video/mp4">
-                    Seu navegador não suporta a exibição de vídeos.
-                </video>
+                <img src="imagens/portifolio2.png" alt="Gerenciador de Tarefas">
+            </a>
+            <video controls width="800">
+                <source src="videos/apresentacaoportifolio2.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos.
+            </video>
         </section>
         
         <section>
             <h2>Experiências Acadêmicas</h2>
             <ul>
-                <li>Graduação em Logística, Unicesumar (Maringá, PR), Janeiro/2014 - Dezembro/2016.</li>
-                <li>Pós-graduação em Gestão Comercial, Unicesumar (Maringá, PR), Janeiro/2018 - Dezembro/2020.</li>
-                <li>Tecnologia em Gestão Comercial, Univel (Cascavel, PR), Janeiro/2017 - Dezembro/2019.</li>
-                <li>Engenharia de Software na Unicesumar, Janeiro/2023 - Dezembro/2026.</li>
-                <li>Inglês Intermediário, UNIOESTE (Cascavel, PR), programa PEL Janeiro/2024 - Dezembro/2024.</li>
-                <li>Pós Graduação em desenvolvimento de aplicativos com JAVA, concluído Junho 2024.</li>
+                <li>Graduação em Logística, Unicesumar (2014-2016).</li>
+                <li>Pós-graduação em Gestão Comercial, Unicesumar (2018-2020).</li>
+                <li>Engenharia de Software, Unicesumar (2023-2026).</li>
+                <li>Pós em Desenvolvimento de Aplicativos com Java (Concluído 2024).</li>
             </ul>
         </section>
         
         <section>
             <h2>Experiências Profissionais</h2>
-            <h3>Aliare</h3>
-            <p>A Aliare é uma empresa AGROTEC com mais de 30 anos de experiência, focada em soluções tecnológicas para o agronegócio. Atuo como Analista de Produto no Squad de Integração desde junho de 2024, facilitando a integração de sistemas e garantindo que as soluções atendam às necessidades específicas dos clientes. Meu objetivo é evoluir para o cargo de Desenvolvedor de Software.</p>
-
-            <h3>Bocchi Atacado</h3>
-            <p>Iniciei na Bocchi Atacado em 2014, atuando na área de logística até me tornar gerente comercial. Durante minha gestão, alcancei metas anuais e organizei convenções importantes. Após 10 anos, decidi mudar o rumo da minha carreira e buscar oportunidades em tecnologia.</p>
+            <p><strong>Aliare:</strong> Atuo como Analista de Produto, facilitando a integração de sistemas e apoiando o desenvolvimento de soluções personalizadas para o agronegócio.</p>
+            <p><strong>Bocchi Atacado:</strong> Experiência em logística, atendimento ao cliente e gestão comercial, desenvolvendo estratégias que impactaram diretamente no crescimento da empresa.</p>
         </section>
         
         <section>
-            <h2>Ferramentas e Tecnologias, que tenho familiaridade</h2>
+            <h2>Ferramentas e Tecnologias</h2>
             <ul>
-                <li><strong>Git:</strong> Controle de versão para colaboração eficiente.</li>
-                <li><strong>Bizagi (BPMN):</strong> Modelagem de processos de negócios.</li>
-                <li><strong>DBeaver:</strong> Cliente de banco de dados robusto e universal.</li>
-                <li><strong>Postman:</strong> Desenvolvimento e teste de APIs.</li>
-                <li><strong>JavaScript e Java:</strong> Linguagens para desenvolvimento front-end e back-end.</li>
-                <li><strong>Css e Html:</strong> Linguagens de apoio para front-end.</li>
-                <li><strong>FreeMind:</strong> Mapeamento mental para organização de ideias.</li>
-                <li><strong>Cypress:</strong> Automação de testes end-to-end.</li>
-                <li><strong>Ciclo de Vida de Produtos:</strong> Gestão estratégica do ciclo de vida de produtos.</li>
+                <li><strong>Git:</strong> Controle de versão para colaboração.</li>
+                <li><strong>DBeaver, MySql, MongoDB:</strong> Gerenciamento de bancos de dados.</li>
+                <li><strong>JavaScript, Java, CSS e HTML:</strong> Desenvolvimento front-end e back-end.</li>
+                <li><strong>Cypress:</strong> Automação de testes.</li>
+                <li><strong>Postman:</strong> Testes de endpoints.</li>
+                <li><strong>Intellij, NetBeans, VSCode: IDEs de desenvolvimento</strong> .</li>
             </ul>
         </section>
         
         <footer>
             <div class="social-icons">
-                <a href="https://www.instagram.com/maateus1994?igsh=c3pydDV6M3M2M3Y4&utm_source=qr" target="_blank"><img src="https://img.freepik.com/vetores-gratis/instagram-icone-novo_1057-2227.jpg?t=st=1721050939~exp=1721054539~hmac=147e107e8feebff4809545d821107b847e348558f9e148e9e44086828b85c8f4&w=740" alt="Instagram"></a>
-                <a href="https://www.facebook.com/share/YhWFy4EBaMTMKttM/?mibextid=kFxxJD" target="_blank"><img src="https://png.pngtree.com/png-clipart/20181008/ourmid/pngtree-facebook-logo-icon-design-vector-free-logo-design-template-png-image_3652951.png" alt="Facebook"></a>
-                <a href="https://www.linkedin.com/in/mateus-brito-628a13100/" target="_blank"><img src="https://static.vecteezy.com/ti/vetor-gratis/p2/18910721-do-logotipo-do-linkedin-simbolo-do-linkedin-gratis-do-icone-do-linkedin-gratis-vetor.jpg" alt="LinkedIn"></a>
-                <a href="https://github.com/maateusbrito/" target="_blank"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub"></a>
+                <a href="https://www.instagram.com/maateus1994" target="_blank">
+                    <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram">
+                </a>
+                <a href="https://www.linkedin.com/in/mateus-brito" target="_blank">
+                    <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/maateusbrito" target="_blank">
+                    <img src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub">
+                </a>
             </div>
-            <p>&copy; 2024 Mateus Soares Brito</p>
+            <p>&copy; 2025 Mateus Soares Brito - Todos os direitos reservados.</p>
         </footer>
     </div>
 </body>
