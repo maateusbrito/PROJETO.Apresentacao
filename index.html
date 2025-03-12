@@ -357,26 +357,143 @@ header {
       width: 48px;
       height: 48px;
     }
-    /* Responsividade */
-    @media (max-width: 768px) {
-      .projects-carousel {
-        flex-wrap: nowrap;
-      }
-      .carousel-button {
-        display: none;
-      }
-    }
-    @media (max-width: 480px) {
-      header {
-        padding: 30px 10px;
-      }
-      .intro-text h2 {
-        font-size: 2rem;
-      }
-      .intro-text p {
-        font-size: 1rem;
-      }
-    }
+
+    /* Responsividade para telas menores (celulares e tablets) */
+@media (max-width: 768px) {
+  /* Ajustes no header */
+  header {
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  /* Estilos para os containers */
+  #welcomeContainer, #nameContainer, #professionContainer, #idealContainer {
+    font-size: 1.2rem; /* Reduzir o tamanho da fonte */
+  }
+
+  .intro-container {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .profile-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .intro-text {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .intro-text h2 {
+    font-size: 2rem;
+  }
+
+  .intro-text p {
+    font-size: 1rem;
+  }
+
+  /* Ajustes nos ícones sociais */
+  .social-under-photo a {
+    margin: 0 10px;
+  }
+
+  .social-under-photo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Ajustes no carousel de projetos */
+  .carousel-container {
+    margin: 20px;
+  }
+
+  .projects-carousel {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .project-card {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  /* Ajustes para a seção de experiência, ferramentas e certificados */
+  .experience-section ul, 
+  #ferramentas-tecnologias ul, 
+  #certificados ul {
+    grid-template-columns: 1fr; /* Colunas em uma linha para telas pequenas */
+  }
+
+  .experience-section li, 
+  #ferramentas-tecnologias li, 
+  #certificados li {
+    font-size: 1rem; /* Tamanho da fonte reduzido */
+  }
+
+  /* Ajustes no footer */
+  footer {
+    padding: 20px 15px;
+  }
+
+  .social-icons a {
+    margin: 0 10px;
+  }
+
+  .social-icons img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Responsividade para telas muito pequenas (smartphones em modo retrato) */
+@media (max-width: 480px) {
+  /* Ajustes mais profundos para telas menores */
+  header {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .intro-container {
+    padding: 10px;
+  }
+
+  .profile-image {
+    width: 180px;
+    height: 180px;
+  }
+
+  .intro-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .intro-text p {
+    font-size: 0.95rem;
+  }
+
+  .carousel-container {
+    margin: 15px;
+  }
+
+  .projects-carousel {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .project-card {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .experience-section li, 
+  #ferramentas-tecnologias li, 
+  #certificados li {
+    font-size: 0.95rem;
+  }
+}
+
   </style>
 </head>
 <body>
