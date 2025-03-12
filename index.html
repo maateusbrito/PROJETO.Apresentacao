@@ -1,247 +1,583 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mateus Soares Brito - Perfil Profissional</title>
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-            line-height: 1.6;
-        }
-        h1, h2, h3 {
-            font-weight: 600;
-            color: #2c3e50;
-        }
-        a {
-            text-decoration: none;
-            color: #3498db;
-            transition: color 0.3s ease-in-out;
-        }
-        a:hover {
-            color: #1abc9c;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        header {
-            display: flex;
-            align-items: center;
-            padding: 20px;
-            background: linear-gradient(to right, #3498db, #1abc9c);
-            color: #fff;
-            border-radius: 8px;
-            margin-bottom: 30px;
-        }
-        .profile-image {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease-in-out;
-            margin-right: 20px;
-        }
-        .profile-image:hover {
-            transform: scale(1.1);
-        }
-        .header-text {
-            flex: 1;
-            text-align: center;
-        }
-        .header-text h1 {
-            font-size: 2.5rem;
-            margin: 0;
-        }
-        .header-text p {
-            font-size: 1.2rem;
-        }
-        .section-links {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin: 20px 0;
-        }
-        .section-links a {
-            padding: 10px 15px;
-            background-color: #1abc9c;
-            color: #fff;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s ease-in-out;
-        }
-        .section-links a:hover {
-            background-color: #16a085;
-        }
-        section {
-            margin-bottom: 30px;
-        }
-        section h2 {
-            font-size: 1.8rem;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #1abc9c;
-            padding-bottom: 5px;
-        }
-        section ul {
-            list-style: none;
-            padding: 0;
-        }
-        section ul li {
-            margin-bottom: 10px;
-            padding-left: 25px;
-            position: relative;
-        }
-        section ul li::before {
-            content: "✔";
-            position: absolute;
-            left: 0;
-            color: #1abc9c;
-            font-weight: bold;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Perfil de Mateus Soares Brito, Desenvolvedor Full Stack. Explore minha experiência, projetos, ferramentas e certificados.">
+  <title>Mateus Soares Brito - Desenvolvedor Full Stack</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    /* Estilos Básicos */
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #444;
+      line-height: 1.6;
+    }
+    /* Header com 3 containers de digitação */
 
-        .portfolio img {
-    max-width: 100%;  /* Ajusta a largura da imagem para não ultrapassar o contêiner */
-    height: auto;     /* Mantém a proporção da imagem */
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    transition: transform 0.3s ease-in-out;
+
+/* Gradiente animado no header */
+header {
+  background: linear-gradient(45deg, #2c3e50, #34495e, #5d6d7e, #7f8c8d, #2c3e50, #34495e); /* Cores mais suaves e escuras para o gradiente */
+  background-size: 400% 400%; /* Define o tamanho do gradiente */
+  animation: gradientAnimation 15s ease infinite; /* Animação mais suave e com mais variação */
+  padding: 20px; /* Apenas para dar um espaço no header */
+  color: #fff; /* Cor do texto */
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold; /* Destaca mais o texto */
 }
 
-.portfolio img:hover {
-    transform: scale(1.05);
+/* Animação do gradiente */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+  75% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 
-        footer {
-            text-align: center;
-            padding: 15px;
-            background: #2c3e50;
-            color: #fff;
-            margin-top: 20px;
-            border-radius: 8px;
-        }
-        footer p {
-            margin: 0;
-        }
-        .social-icons {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .social-icons a {
-            margin: 0 15px;
-            display: inline-block;
-            transition: transform 0.3s ease-in-out;
-        }
-        .social-icons a:hover {
-            transform: scale(1.2);
-        }
-        .social-icons img {
-            width: 40px;
-            height: 40px;
-        }
-        video {
-            display: block;
-            margin: 20px auto;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-        }
-    </style>
+
+/* Estilos para os containers */
+#welcomeContainer {
+  color: #f5eded; /* Verde vibrante */
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+#welcomeContainer span {
+  color: #f0f0f0; /* Manter a cor vibrante para o texto principal */
+}
+
+#nameContainer {
+  color: #dbdce2; /* Azul escuro vibrante */
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+#nameContainer span {
+  color: #483283; /* Manter a cor vibrante para o texto principal */
+}
+
+#professionContainer {
+  color: #f39c12; /* Amarelo dourado */
+  font-size: 1.4rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+#professionContainer span {
+  color: #f39c12; /* Manter a cor dourada para o texto principal */
+}
+
+#idealContainer {
+  color: #e02f1b; /* Vermelho forte */
+  font-size: 1.4rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+#idealContainer span {
+  color: #e74c3c; /* Manter a cor vibrante para o texto principal */
+}
+
+/* Linha separadora entre os containers */
+.typing-container + .typing-container {
+  border-top: 1px solid rgba(173, 126, 126, 0.336); /* Linha suave entre os containers */
+  margin-top: 5px;
+  padding-top: 5px;
+}
+
+
+
+    /* Cursor piscante */
+    .typing-container::after {
+      content: "";
+      border-right: 1px solid currentColor;
+      animation: blink 0.7s step-end infinite;
+    }
+    @keyframes blink {
+      0%, 100% { border-color: transparent; }
+      50% { border-color: currentColor; }
+    }
+    /* Intro - foto, redes sociais e texto */
+    .intro-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+    .profile-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .profile-image {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+    .profile-image:hover {
+      transform: scale(1.1);
+    }
+    .social-under-photo {
+      margin-top: 40px; /* Espaço maior abaixo da foto */
+      text-align: center;
+    }
+    .social-under-photo a {
+      margin: 0 5px;
+      display: inline-block;
+    }
+    .social-under-photo img {
+      width: 60px; /* Ícones maiores */
+      height: 60px;
+      transition: transform 0.3s;
+    }
+    .social-under-photo a:hover img {
+      transform: scale(1.2);
+    }
+    .intro-text {
+      max-width: 600px;
+      text-align: center;
+      padding: 0 20px;
+    }
+    .intro-text h2 {
+      font-size: 2.5rem;
+      color: #f3f5f7;
+    }
+    .intro-text p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    /* Títulos de seção centralizados */
+    .section-title {
+      font-size: 2rem;
+      color: #2c3e50;
+      text-align: center;
+      margin-top: 40px;
+      padding-bottom: 10px;
+      border-bottom: 3px solid #3498db;
+    }
+    /* Carousel de Projetos */
+    .carousel-container {
+      position: relative;
+      margin: 40px 20px;
+      overflow: hidden;
+    }
+    .projects-carousel {
+      display: flex;
+      gap: 20px;
+      padding: 10px;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+    }
+    .project-card {
+      min-width: 150px; /* Largura reduzida */
+      width: 400px;
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      flex-shrink: 0;
+      transition: transform 0.3s;
+    }
+    .project-card:hover {
+      transform: translateY(-10px);
+    }
+    .media-container {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .media-container video,
+    .media-container img {
+      width: 50%;
+      border-radius: 8px;
+      object-fit: cover;
+      height: 180px; /* Altura aumentada */
+    }
+    .project-card h3 {
+      font-size: 1.4rem;
+      color: #3498db;
+      margin-top: 10px;
+    }
+    .project-card p {
+      font-size: 0.95rem;
+      color: #555;
+      margin: 8px 0;
+    }
+    .project-card a {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .project-card a:hover {
+      text-decoration: underline;
+    }
+    .carousel-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 1;
+    }
+    .carousel-button.left {
+      left: 0;
+    }
+    .carousel-button.right {
+      right: 0;
+    }
+    /* Efeito de card para experiências, ferramentas e certificados */
+    .experience-section li, 
+    #ferramentas-tecnologias li, 
+    #certificados li {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .experience-section li:hover, 
+    #ferramentas-tecnologias li:hover, 
+    #certificados li:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    /* Experiências */
+    .experience-section {
+      margin: 40px 20px;
+    }
+    .experience-section ul {
+      list-style: none;
+      padding: 0;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .experience-section li {
+      background: white;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      font-size: 1.1rem;
+    }
+    /* Ferramentas e Tecnologias */
+    #ferramentas-tecnologias {
+      background: white;
+      padding: 40px 20px;
+      margin: 40px 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    #ferramentas-tecnologias ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 15px;
+    }
+    #ferramentas-tecnologias li {
+      background: #f5f5f5;
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    /* Certificados */
+    #certificados {
+      background: white;
+      padding: 40px 20px;
+      margin: 40px 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    #certificados ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 15px;
+    }
+    #certificados li {
+      background: #f5f5f5;
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    #certificados li img {
+      max-width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    #certificados li p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+    /* Footer */
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+    footer p {
+      margin: 0;
+    }
+    .social-icons {
+      margin-top: 10px;
+    }
+    .social-icons a {
+      margin: 0 15px;
+      transition: transform 0.3s;
+    }
+    .social-icons a:hover {
+      transform: scale(1.2);
+    }
+    .social-icons img {
+      width: 48px;
+      height: 48px;
+    }
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .projects-carousel {
+        flex-wrap: nowrap;
+      }
+      .carousel-button {
+        display: none;
+      }
+    }
+    @media (max-width: 480px) {
+      header {
+        padding: 30px 10px;
+      }
+      .intro-text h2 {
+        font-size: 2rem;
+      }
+      .intro-text p {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <img src="imagens/fotomateus.png" alt="Foto de Mateus" class="profile-image">
-            <div class="header-text">
-                <h1>Mateus Soares Brito</h1>
-                <p>Desenvolvedor Full Stack 🚀</p>
-            </div>
-        </header>
-
-        <div class="section-links">
-            <a href="#biografia">Biografia</a>
-            <a href="#portfólio">Portfólio</a>
-            <a href="#experiencias-academicas">Experiências Acadêmicas</a>
-            <a href="#experiencias-profissionais">Experiências Profissionais</a>
-            <a href="#ferramentas-tecnologias">Ferramentas e Tecnologias</a>
-        </div>
-
-        <section id="biografia">
-            <h2>Biografia</h2>
-            <p>Sou apaixonado por tecnologia e atualmente atuo como desenvolvedor de soluções inteligentes no squad de integração entre APIs. Minha paixão por desenvolvimento me levou a buscar a formação em Engenharia de Software, onde continuo explorando esse universo fascinante.</p>
-        </section>
-        
-        <section class="portfolio">
-            <h2>Portfólio</h2>
-            <h3>Site para um Corretor Imobiliário</h3>
-            <a href="https://lucasagenteimobiliario.com/" target="_blank">
-                <img src="imagens/portifolio1.png" alt="Site para Corretor Imobiliário">
-            </a>
-            <video controls width="800">
-                <source src="videos/apresentacaoportifolio1.mp4" type="video/mp4">
-                Seu navegador não suporta vídeos.
-            </video>
-            <h3>Gerenciador de Tarefas Inteligente</h3>
-            <a href="https://apptaskminder.netlify.app/" target="_blank">
-                <img src="imagens/portifolio2.png" alt="Gerenciador de Tarefas">
-            </a>
-            <video controls width="800">
-                <source src="videos/apresentacaoportifolio2.mp4" type="video/mp4">
-                Seu navegador não suporta vídeos.
-            </video>
-        </section>
-        
-        <section id="experiencias-academicas">
-            <h2>Experiências Acadêmicas</h2>
-            <ul>
-                <li>Graduação em Logística, Unicesumar (2014-2016).</li>
-                <li>Pós-graduação em Gestão Comercial, Unicesumar (2018-2020).</li>
-                <li>Engenharia de Software, Unicesumar (2023-2026).</li>
-                <li>Pós em Desenvolvimento de Aplicativos com Java (Concluído 2024).</li>
-            </ul>
-        </section>
-        
-        <section id="experiencias-profissionais">
-            <h2>Experiências Profissionais</h2>
-            <p><strong>Aliare:</strong> Atuo como Desenvolvedor na integração de sistemas e soluções personalizadas para o agronegócio.</p>
-            <p><strong>Bocchi Atacado:</strong> Atuei como Gerente Comercial, sendo responsavel por contratações, distratos, reuniões, metas e desenvolvimento de estratégias que impactaram diretamente no crescimento da empresa.</p>
-        </section>
-        
-        <section id="ferramentas-tecnologias">
-            <h2>Ferramentas e Tecnologias</h2>
-            <ul>
-                <li><strong>Git:</strong> Controle de versão para colaboração.</li>
-                <li><strong>DBeaver, MySql, MongoDB:</strong> Gerenciamento de bancos de dados.</li>
-                <li><strong>JavaScript, Java, CSS e HTML:</strong> Desenvolvimento front-end e back-end.</li>
-                <li><strong>Cypress:</strong> Automação de testes.</li>
-                <li><strong>Postman:</strong> Testes de endpoints.</li>
-                <li><strong>React, Node.js:</strong> Desenvolvimento de aplicações web dinâmicas.</li>
-                <li><strong>Docker:</strong> Criação de ambientes isolados para desenvolvimento e produção.</li>
-                <li><strong>AWS:</strong> Infraestrutura em nuvem para escalabilidade e performance.</li>
-            </ul>
-        </section>
-
-        <footer>
-            <div class="social-icons">
-                <a href="https://www.instagram.com/maateus1994" target="_blank">
-                    <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram">
-                </a>
-                <a href="https://www.linkedin.com/in/mateus-brito" target="_blank">
-                    <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/maateusbrito" target="_blank">
-                    <img src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub">
-                </a>
-            </div>
-            <p>&copy; 2025 Mateus Soares Brito - Todos os direitos reservados.</p>
-        </footer>
-        </div>
+  <header>
+    <!-- Container 1: Seja bem vindo + saudação -->
+    <div id="welcomeContainer" class="typing-container"></div>
+    <!-- Container 2: Nome -->
+    <div id="nameContainer" class="typing-container"></div>
+    <!-- Container 3: Profissão -->
+    <div id="professionContainer" class="typing-container"></div>
+       <!-- Container 4: Profissão -->
+       <div id="idealContainer" class="typing-container"></div>
+      </header>
+  
+  <!-- Intro com foto, redes sociais e apresentação -->
+  <div class="intro-container">
+    <div class="profile-container">
+      <img src="imagens/fotomateus.png" alt="Foto de Mateus Soares Brito" class="profile-image">
+      <div class="social-under-photo">
+        <a href="https://www.instagram.com/maateus1994" target="_blank">
+          <img src="https://img.icons8.com/color/56/000000/instagram-new.png" alt="Instagram">
+        </a>
+        <a href="https://www.linkedin.com/in/mateus-brito" target="_blank">
+          <img src="https://img.icons8.com/color/56/000000/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/maateusbrito" target="_blank">
+          <img src="https://img.icons8.com/color/56/000000/github.png" alt="GitHub">
+        </a>
+      </div>
     </div>
+
+    <div class="intro-text">
+      <h2>Um pouco sobre mim...</h2>
+      <p>Sou apaixonado por tecnologia, especializado na criação de soluções inteligentes. Trabalho com integração de APIs, desenvolvimento web dinâmico e construção de sistemas escaláveis, utilizando tecnologias como Java, Javascript, React, Node.js e muito mais.</p>
+    </div>
+  </div>
+
+  <!-- Seção de Projetos com Carousel -->
+  <section>
+    <h2 class="section-title">Projetos em Destaque</h2>
+    <div class="carousel-container">
+      <button class="carousel-button left" onclick="scrollProjects(-1)">&lt;</button>
+      <div class="projects-carousel" id="projectsCarousel">
+        <!-- Projeto 1: Vídeo + Imagem -->
+        <div class="project-card">
+          <div class="media-container">
+            <video controls>
+              <source src="videos/aprecentacaoportifolio1.mp4" type="video/mp4">
+              Seu navegador não suporta o vídeo.
+            </video>
+            <img src="imagens/portifolio1.png" alt="Site para Corretor Imobiliário">
+          </div>
+          <h3>Site para um Corretor Imobiliário</h3>
+          <p>Plataforma personalizada para anúncios, proporcionando experiência fluída para os clientes.</p>
+          <a href="https://lucasagenteimobiliario.com/" target="_blank">Visite o site</a>
+        </div>
+        <!-- Projeto 2: Vídeo + Imagem -->
+        <div class="project-card">
+          <div class="media-container">
+            <video controls>
+              <source src="videos/apresentacaoportifolio2.mp4" type="video/mp4">
+              Seu navegador não suporta o vídeo.
+            </video>
+            <img src="imagens/portifolio2.png" alt="TaskMinder ERP">
+          </div>
+          <h3>TaskMinder - Sistema de Gestão de Tarefas</h3>
+          <p>Sistema completo com lembretes e chatbot para auxiliar no dia a dia.</p>
+          <a href="https://apptaskminder.netlify.app/" target="_blank">Veja o Projeto</a>
+        </div>
+      </div>
+      <button class="carousel-button right" onclick="scrollProjects(1)">&gt;</button>
+    </div>
+  </section>
+  
+  <!-- Experiências Acadêmicas -->
+  <section id="experiencias-academicas" class="experience-section">
+    <h2 class="section-title">Experiências Acadêmicas</h2>
+    <ul>
+      <li><strong>Universidade XYZ</strong> - Bacharelado em Ciência da Computação (2015-2019)</li>
+      <li><strong>Instituto ABC</strong> - Mestrado em Engenharia de Software (2019-2021)</li>
+    </ul>
+  </section>
+  
+  <!-- Experiências Profissionais -->
+  <section id="experiencias-profissionais" class="experience-section">
+    <h2 class="section-title">Experiências Profissionais</h2>
+    <ul>
+      <li><strong>Empresa 123</strong> - Desenvolvedor Full Stack (2021-Atual)</li>
+      <li><strong>Startup 456</strong> - Estágio em Desenvolvimento Web (2019-2021)</li>
+    </ul>
+  </section>
+  
+  <!-- Ferramentas e Tecnologias -->
+  <section id="ferramentas-tecnologias">
+    <h2 class="section-title">Ferramentas e Tecnologias</h2>
+    <ul>
+      <li><strong>Git:</strong> Controle de versão para colaboração.</li>
+      <li><strong>DBeaver, MySQL, MongoDB:</strong> Gerenciamento de bancos de dados.</li>
+      <li><strong>JavaScript, Java, CSS e HTML:</strong> Desenvolvimento front-end e back-end.</li>
+      <li><strong>Cypress:</strong> Automação de testes.</li>
+      <li><strong>Postman:</strong> Testes de endpoints.</li>
+      <li><strong>React, Node.js:</strong> Desenvolvimento de aplicações web dinâmicas.</li>
+      <li><strong>Docker:</strong> Criação de ambientes isolados para desenvolvimento e produção.</li>
+      <li><strong>AWS:</strong> Infraestrutura em nuvem para escalabilidade e performance.</li>
+    </ul>
+  </section>
+  
+  <!-- Certificados -->
+  <section id="certificados">
+    <h2 class="section-title">Certificados</h2>
+    <ul>
+      <li>
+        <a href="certificados/posgraduacaojava.pdf" target="_blank">
+          <img src="certificados/certificadoposjava.png" alt="Certificado de Pós-Graduação Java">
+        </a>
+        <p><strong>Pós-Graduação em Java:</strong> Principais aprendizados em padrões de projeto, programação orientada a objetos e arquitetura de software.</p>
+      </li>
+      <!-- Adicione outros certificados se necessário -->
+    </ul>
+  </section>
+  
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/maateus1994" target="_blank">
+        <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram">
+      </a>
+      <a href="https://www.linkedin.com/in/mateus-brito" target="_blank">
+        <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/maateusbrito" target="_blank">
+        <img src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub">
+      </a>
+    </div>
+    <p>&copy; 2025 Mateus Soares Brito - Todos os direitos reservados.</p>
+  </footer>
+  
+  <script>
+    // Função para digitar o texto em um container sem apagar outros
+    function typeContainer(containerId, text, charDelay, callback) {
+      let container = document.getElementById(containerId);
+      let i = 0;
+      function typeChar() {
+        if (i < text.length) {
+          container.innerHTML += (text.charAt(i) === "\n") ? "<br>" : text.charAt(i);
+          i++;
+          setTimeout(typeChar, charDelay);
+        } else {
+          if(callback) callback();
+        }
+      }
+      typeChar();
+    }
+    
+    // Função para executar a sequência completa
+    function startTypingSequence() {
+      // Define saudação dinâmica
+      let now = new Date();
+      let hour = now.getHours();
+      let greeting = "";
+      if(hour >= 5 && hour < 12) {
+        greeting = "🌅 Bom dia!";
+      } else if(hour >= 12 && hour < 18) {
+        greeting = "🌞 Boa tarde!";
+      } else {
+        greeting = "🌙 Boa noite!";
+      }
+      // Limpa os containers (caso estejam preenchidos de uma iteração anterior)
+      document.getElementById("welcomeContainer").innerHTML = "";
+      document.getElementById("nameContainer").innerHTML = "";
+      document.getElementById("professionContainer").innerHTML = "";
+      document.getElementById("idealContainer").innerHTML = "";
+      
+      // Digita cada container em sequência sem apagar os anteriores
+      typeContainer("welcomeContainer", "👋 Olá, seja muito bem-vindo(a)!!\n " + greeting, 70, function() {
+  typeContainer("nameContainer", "✨ Eu sou Mateus Soares Brito! 😎", 70, function() {
+    typeContainer("professionContainer", "💻 Desenvolvedor Full Stack 🚀", 70, function() {
+      typeContainer("idealContainer", "🔥 Transformando ideias inovadoras em soluções inteligentes! 💡", 70, function() {
+            // Após os quatro containers estarem exibidos, espera 4 segundos e reinicia a sequência
+            setTimeout(function(){
+              document.getElementById("welcomeContainer").innerHTML = "";
+              document.getElementById("nameContainer").innerHTML = "";
+              document.getElementById("professionContainer").innerHTML = "";
+              document.getElementById("idealContainer").innerHTML = "";
+              startTypingSequence();
+            }, 4000);
+          });
+        });
+      });
+    });
+    }
+    
+    document.addEventListener("DOMContentLoaded", function() {
+      startTypingSequence();
+    });
+    
+    // Função para navegação do carrossel
+    function scrollProjects(direction) {
+      const carousel = document.getElementById("projectsCarousel");
+      // Desloca aproximadamente o tamanho de um card (150px + gap)
+      carousel.scrollBy({ left: direction * 180, behavior: 'smooth' });
+    }
+  </script>
 </body>
 </html>
