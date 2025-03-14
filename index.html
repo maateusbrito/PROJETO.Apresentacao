@@ -156,13 +156,13 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 300px; /* Espaço à esquerda */
+  margin-left: 50px; /* Espaço à esquerda */
   margin-right: 20px; /* Espaço à direita */
 }
 
     .profile-image {
-      width: 350px;
-      height: 350px;
+      width: 300px;
+      height: 300px;
       border-radius: 50%;
       object-fit: cover;
       box-shadow: 0 4px 15px rgba(0,0,0,0.2);
@@ -182,8 +182,8 @@ header {
 }
 
 .social-under-photo img {
-  width: 80px; /* Ícones maiores */
-  height: 80px;
+  width: 60px; /* Ícones maiores */
+  height: 60px;
   transition: transform 0.3s;
 }
 
@@ -192,7 +192,7 @@ header {
 }
 
     .intro-text {
-  max-width: 800px;
+  max-width: 700px;
   text-align: center;
   padding: 0 20px;
   margin: 0 auto;
@@ -203,8 +203,8 @@ header {
 }
 
 .intro-text h2 {
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 1.8rem;
+  font-weight: 600;
   color: #ffffff;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -217,7 +217,7 @@ header {
 }
 
 .intro-text h3 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #f39c12;
   font-weight: 500;
   margin-top: 5px;
@@ -271,8 +271,8 @@ header {
       scroll-behavior: smooth;
     }
     .project-card {
-      min-width: 150px; /* Largura reduzida */
-      width: 400px;
+      min-width: 100px; /* Largura reduzida */
+      width: 300px;
       background: white;
       padding: 15px;
       border-radius: 8px;
@@ -290,7 +290,7 @@ header {
     }
     .media-container video,
     .media-container img {
-      width: 50%;
+      width: 100%;
       border-radius: 8px;
       object-fit: cover;
       height: 180px; /* Altura aumentada */
@@ -440,78 +440,115 @@ header {
       height: 48px;
     }
 
-   /* Estilos para telas pequenas (menor que 768px) */
+    /* Estilização do modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+  }
+
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+  }
+
+    /* Responsividade para telas menores (celulares e tablets) */
+/* Responsividade para telas menores (celulares e tablets) */
 @media (max-width: 768px) {
-  /* Header */
+  /* Ajustes no header */
   header {
     font-size: 18px;
     padding: 15px;
   }
 
-  /* Container de boas-vindas */
-  #welcomeContainer {
-    font-size: 2rem;
-    padding: 15px;
-    margin: 30px auto;
+  /* Estilos para os containers */
+  #welcomeContainer, #nameContainer, #professionContainer, #idealContainer {
+    font-size: 1.2rem; /* Reduzir o tamanho da fonte */
   }
 
-  /* Introdução - Imagem e texto */
   .intro-container {
     flex-direction: column;
-    align-items: center;
-  }
-
-  .profile-container {
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 20px;
+    padding: 15px;
   }
 
   .profile-image {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
   }
 
   .intro-text {
-    padding: 20px;
+    max-width: 100%;
+    padding: 0 15px;
   }
 
   .intro-text h2 {
-    font-size: 1.6rem;
-  }
-
-  .intro-text h3 {
-    font-size: 1.3rem;
+    font-size: 2rem;
   }
 
   .intro-text p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
-  /* Projetos */
+  /* Ajustes nos ícones sociais */
+  .social-under-photo a {
+    margin: 0 10px;
+  }
+
+  .social-under-photo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Ajustes no carousel de projetos */
+  .carousel-container {
+    margin: 20px;
+  }
+
   .projects-carousel {
+    flex-wrap: wrap; /* Permite que os itens se alinhem lado a lado */
     gap: 10px;
+    padding: 10px;
   }
 
   .project-card {
-    width: 300px;
+    width: 45%; /* Ajuste a largura para que fiquem lado a lado */
+    min-width: 45%; /* Garante que as cartas tenham uma largura mínima adequada */
+    margin-bottom: 20px; /* Espaçamento entre os cards */
   }
 
-  .media-container video,
-  .media-container img {
-    width: 100%;
-    height: auto;
-  }
-
-  /* Ferramentas e Tecnologias */
-  #ferramentas-tecnologias ul,
+  /* Ajustes para a seção de experiência, ferramentas e certificados */
+  .experience-section ul, 
+  #ferramentas-tecnologias ul, 
   #certificados ul {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: 1fr; /* Colunas em uma linha para telas pequenas */
   }
 
-  /* Footer */
+  .experience-section li, 
+  #ferramentas-tecnologias li, 
+  #certificados li {
+    font-size: 1rem; /* Tamanho da fonte reduzido */
+  }
+
+  /* Ajustes no footer */
   footer {
-    padding: 20px;
+    padding: 20px 15px;
   }
 
   .social-icons a {
@@ -524,90 +561,52 @@ header {
   }
 }
 
-/* Estilos para telas grandes (maior que 768px) */
-@media (min-width: 768px) {
-  /* Header */
+
+/* Responsividade para telas muito pequenas (smartphones em modo retrato) */
+@media (max-width: 480px) {
+  /* Ajustes mais profundos para telas menores */
   header {
-    font-size: 24px;
-    padding: 20px;
+    font-size: 16px;
+    padding: 10px;
   }
 
-  /* Container de boas-vindas */
-  #welcomeContainer {
-    font-size: 2.5rem;
-    padding: 25px;
-    margin: 50px auto;
-  }
-
-  /* Introdução - Imagem e texto */
   .intro-container {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .profile-container {
-    margin-left: 300px;
-    margin-right: 20px;
+    padding: 10px;
   }
 
   .profile-image {
-    width: 350px;
-    height: 350px;
-  }
-
-  .intro-text {
-    padding: 30px;
-  }
-
-  .intro-text h2 {
-    font-size: 2rem;
-  }
-
-  .intro-text h3 {
-    font-size: 1.6rem;
-  }
-
-  .intro-text p {
-    font-size: 1.3rem;
-  }
-
-  /* Projetos */
-  .projects-carousel {
-    gap: 20px;
-  }
-
-  .project-card {
-    width: 400px;
-  }
-
-  .media-container video,
-  .media-container img {
-    width: 50%;
+    width: 180px;
     height: 180px;
   }
 
-  /* Ferramentas e Tecnologias */
-  #ferramentas-tecnologias ul,
-  #certificados ul {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  .intro-text h2 {
+    font-size: 1.8rem;
   }
 
-  /* Footer */
-  footer {
-    padding: 30px;
+  .intro-text p {
+    font-size: 0.95rem;
   }
 
-  .social-icons a {
-    margin: 0 15px;
+  .carousel-container {
+    margin: 15px;
   }
 
-  .social-icons img {
-    width: 48px;
-    height: 48px;
+  .projects-carousel {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .project-card {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .experience-section li, 
+  #ferramentas-tecnologias li, 
+  #certificados li {
+    font-size: 0.95rem;
   }
 }
-
 
   </style>
 </head>
@@ -630,23 +629,24 @@ header {
           <img src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG7.png" alt="LinkedIn">
         </a>
         <a href="https://github.com/maateusbrito" target="_blank">
-          <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
+          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
         </a>
       </div>
     </div>
 
     <div class="intro-text">
-      <h2>Olá, sou Mateus Soares Brito 😎</h2>
-      <h3>Deixa eu te contar um pouco sobre mim... 👇</h3>
-      <p>Acredito que a tecnologia tem o poder de tornar a vida mais simples e menos estressante 😌✨.</p>
-      <p>Não faz sentido perder tempo com tarefas repetitivas ou burocracia. A inovação deve resolver problemas de forma automática 📝💼.</p>
-      <p>Vejo a tecnologia como algo que simplifica – seja automatizando processos, economizando recursos ou criando soluções sustentáveis 🚗🌍💡.</p>
-      <p>No final, tecnologia boa é aquela que funciona sem a gente perceber 😎🧠.</p>
-      <p>Porque se a tecnologia é difícil de usar, já está no caminho errado 😆💻.</p>
-      <p>Inovação não é só sobre códigos e chips 💻🔧, mas sobre otimizar o tempo, tornar tudo mais eficiente e inteligente 🧠⚡ – para que possamos focar no que realmente importa, como escolher uma série para maratonar sem perder tempo procurando 📱🎬😂.</p>
-      <p>Sou apaixonado por tecnologia 🔍💡. Trabalho com integração de APIs, desenvolvimento web dinâmico e criação de sistemas com Java, JavaScript, React, Node.js e muito mais 🚀.</p>
+      <h2>Meu nome é Mateus Soares Brito 😎</h2>
+      <h3>Agora vou falar um pouco sobre mim.. 👇</h3>
+      <p>Eu acredito que a tecnologia tem um papel fundamental em tornar a vida mais fácil e menos estressante 😌✨.</p>
+      <p>Não faz sentido perder tempo com burocracia ou tarefas repetitivas que poderiam muito bem se resolver sozinhas 📝💼.</p>
+      <p>Desde automatizar processos chatos até ajudar o meio ambiente economizando recursos 🌍💡, vejo a inovação como algo que vem para simplificar – seja algo simples, como um lembrete pra não esquecer de regar a planta (que, confesso, já está na UTI das plantas 😢🌱), ou algo mais complexo, como tornar as cidades mais sustentáveis 🚗🌱💚.</p>
+      <p>No fim das contas, eu acredito que tecnologia boa é aquela que resolve sem a gente nem perceber 😎🧠.</p>
+      <p>Porque se tem que sofrer pra usar, já começou errado 😆💻.</p>
+      <p>Pra mim, inovação não é só sobre chips e códigos 💻🔧, mas sobre facilitar a vida, otimizar o tempo e tornar tudo mais inteligente 🧠⚡ – pra gente focar no que realmente importa... tipo escolher uma série pra maratonar sem passar 40 minutos só rolando o catálogo 📱🎬😂.</p>
+      <p>Sou apaixonado por tecnologia 🔍💡. Trabalho com integração de APIs, desenvolvimento web dinâmico e construção de sistemas, utilizando tecnologias como Java, Javascript, React, Node.js e muito mais 🚀.</p>
     </div>
-    
+  </div>
+</div>
 
 </header>
 
@@ -663,7 +663,7 @@ header {
               <source src="videos/aprecentacaoportifolio1.mp4" type="video/mp4">
               Seu navegador não suporta o vídeo.
             </video>
-            <img src="imagens/portifolio1.png" alt="Site para Corretor Imobiliário">
+       <!--      <img src="imagens/portifolio1.png" alt="Site para Corretor Imobiliário">-->
           </div>
           <h3>Site para um Corretor Imobiliário</h3>
           <p>Plataforma personalizada para anúncios, proporcionando experiência fluída para os clientes.</p>
@@ -676,7 +676,7 @@ header {
               <source src="videos/apresentacaoportifolio2.mp4" type="video/mp4">
               Seu navegador não suporta o vídeo.
             </video>
-            <img src="imagens/portifolio2.png" alt="TaskMinder ERP">
+          <!--   <img src="imagens/portifolio2.png" alt="TaskMinder ERP">-->
           </div>
           <h3>TaskMinder - Sistema de Gestão de Tarefas</h3>
           <p>Sistema completo com lembretes e chatbot para auxiliar no dia a dia.</p>
@@ -740,6 +740,13 @@ header {
   </section>
   
   <!-- Certificados -->
+
+  <!-- Modal para exibição em tela cheia -->
+<div id="modalCertificado" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="imgModal">
+</div>
+
   <section id="certificados">
     <h2 class="section-title2">Certificados</h2>
     <ul>
@@ -785,7 +792,7 @@ header {
         <img src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG7.png" alt="LinkedIn">
       </a>
       <a href="https://github.com/maateusbrito" target="_blank">
-        <img src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
       </a>
     </div>
     <p>&copy; 2025 Mateus Soares Brito - Todos os direitos reservados.</p>
@@ -847,6 +854,39 @@ header {
       // Desloca aproximadamente o tamanho de um card (150px + gap)
       carousel.scrollBy({ left: direction * 180, behavior: 'smooth' });
     }
+
+    document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("modalCertificado");
+    const modalImg = document.getElementById("imgModal");
+    const closeModal = document.querySelector(".close");
+
+    // Adiciona evento de clique a todas as imagens de certificado
+    document.querySelectorAll("#certificados img").forEach(img => {
+      img.addEventListener("click", function () {
+        modal.style.display = "flex";
+        modalImg.src = this.src;
+      });
+    });
+
+    // Fecha o modal ao clicar no botão de fechar
+    closeModal.addEventListener("click", function () {
+      modal.style.display = "none";
+    });
+
+    // Fecha o modal ao clicar fora da imagem
+    modal.addEventListener("click", function (event) {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+
+    // Fecha o modal ao pressionar a tecla "Esc"
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        modal.style.display = "none";
+      }
+    });
+  });
   </script>
 </body>
 </html>
