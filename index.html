@@ -68,44 +68,48 @@ header {
 
 /* Estilos para os containers */
 #welcomeContainer {
-  color: #f5eded; /* Verde vibrante */
-  font-size: 1.5rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  color: #ecf0f1; /* Cor clara para contraste e elegância */
+  font-size: 2.5rem; /* Tamanho de fonte moderado para boa legibilidade */
+  font-family: 'Roboto', sans-serif; /* Fonte moderna e elegante */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave para dar profundidade, sem exagerar */
+  line-height: 1.6; /* Mais espaçamento entre as linhas para melhorar a legibilidade */
+  padding: 25px;
+  border-radius: 15px; /* Bordas arredondadas para suavizar o visual */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra suave, elegante */
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+  background-color: #34495e; /* Fundo escuro, mas não tão intenso, para um visual mais sóbrio */
+  letter-spacing: 1px; /* Espaçamento leve entre as letras */
+  transition: all 0.3s ease-in-out;
 }
 
+/* Efeito de aumento e suavização ao passar o mouse */
+#welcomeContainer:hover {
+  transform: scale(1.03); /* Leve aumento sem exagero */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Aumenta a profundidade de forma sutil */
+}
+
+/* Animação de fade-in suave */
+#welcomeContainer {
+  animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Efeito para palavras destacadas */
 #welcomeContainer span {
-  color: #f0f0f0; /* Manter a cor vibrante para o texto principal */
+  color: #f39c12; /* Cor suave para destacar palavras importantes */
+  font-weight: 600; /* Destacar palavras sem exagerar */
+  text-transform: uppercase;
+  letter-spacing: 1.5px; /* Espaçamento moderado */
+  font-style: italic; /* Dá um toque mais elegante */
 }
 
-#nameContainer {
-  color: #dbdce2; /* Azul escuro vibrante */
-  font-size: 1.5rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra suave */
-}
 
-#nameContainer span {
-  color: #483283; /* Manter a cor vibrante para o texto principal */
-}
-
-#professionContainer {
-  color: #f39c12; /* Amarelo dourado */
-  font-size: 1.4rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra suave */
-}
-
-#professionContainer span {
-  color: #f39c12; /* Manter a cor dourada para o texto principal */
-}
-
-#idealContainer {
-  color: #e02f1b; /* Vermelho forte */
-  font-size: 1.4rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra suave */
-}
-
-#idealContainer span {
-  color: #e74c3c; /* Manter a cor vibrante para o texto principal */
-}
 
 /* Linha separadora entre os containers */
 .typing-container + .typing-container {
@@ -113,7 +117,6 @@ header {
   margin-top: 5px;
   padding-top: 5px;
 }
-
 
 
     /* Cursor piscante */
@@ -126,6 +129,20 @@ header {
       0%, 100% { border-color: transparent; }
       50% { border-color: currentColor; }
     }
+
+/* Estilos para o container com fundo branco e imagem de fundo */
+.intro-background {
+  background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com 80% de opacidade */
+  background-image: url('https://blog.xpeducacao.com.br/wp-content/uploads/2023/01/Como-fazer-um-bom-portfolio-de-desenvolvedor-web-inspiracoes-scaled.jpg'); /* Substitua pela URL da sua imagem */
+  background-size: cover; /* A imagem cobre todo o fundo */
+  background-position: center; /* Centraliza a imagem */
+  padding: 40px 20px; /* Espaçamento interno */
+  border-radius: 15px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin-bottom: 40px; /* Espaçamento inferior */
+}
+
+
     /* Intro - foto, redes sociais e texto */
     .intro-container {
       display: flex;
@@ -136,13 +153,16 @@ header {
       flex-wrap: wrap;
     }
     .profile-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 300px; /* Espaço à esquerda */
+  margin-right: 20px; /* Espaço à direita */
+}
+
     .profile-image {
-      width: 250px;
-      height: 250px;
+      width: 350px;
+      height: 350px;
       border-radius: 50%;
       object-fit: cover;
       box-shadow: 0 4px 15px rgba(0,0,0,0.2);
@@ -152,39 +172,71 @@ header {
       transform: scale(1.1);
     }
     .social-under-photo {
-      margin-top: 40px; /* Espaço maior abaixo da foto */
-      text-align: center;
-    }
-    .social-under-photo a {
-      margin: 0 5px;
-      display: inline-block;
-    }
-    .social-under-photo img {
-      width: 60px; /* Ícones maiores */
-      height: 60px;
-      transition: transform 0.3s;
-    }
-    .social-under-photo a:hover img {
-      transform: scale(1.2);
-    }
-    .intro-text {
-      max-width: 600px;
-      text-align: center;
-      padding: 0 20px;
-    }
-    .intro-text h2 {
-      font-size: 2.5rem;
-      color: #ffffff;
-    }
+  margin-top: 100px; /* Espaço maior abaixo da foto */
+  text-align: center;
+}
 
-    .intro-text h3 {
-      font-size: 1.5rem;
-      color: #f39c12;
-    }
-    .intro-text p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-    }
+.social-under-photo a {
+  margin: 0 15px; /* Aumentado o espaçamento entre os ícones */
+  display: inline-block;
+}
+
+.social-under-photo img {
+  width: 80px; /* Ícones maiores */
+  height: 80px;
+  transition: transform 0.3s;
+}
+
+.social-under-photo a:hover img {
+  transform: scale(1.2);
+}
+
+    .intro-text {
+  max-width: 800px;
+  text-align: center;
+  padding: 0 20px;
+  margin: 0 auto;
+  background: linear-gradient(45deg, #1c1c1c, #2c3e50);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+}
+
+.intro-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+.intro-text h2:hover {
+  color: #f39c12; /* Cor de destaque ao passar o mouse */
+}
+
+.intro-text h3 {
+  font-size: 1.6rem;
+  color: #f39c12;
+  font-weight: 500;
+  margin-top: 5px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.intro-text p {
+  font-size: 1.3rem;
+  color: #ecf0f1;
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+.intro-text p:hover {
+  color: #f39c12; /* Efeito hover para o parágrafo */
+  cursor: pointer;
+}
+
     /* Títulos de seção centralizados */
     .section-title {
       font-size: 2rem;
@@ -388,86 +440,78 @@ header {
       height: 48px;
     }
 
-    /* Responsividade para telas menores (celulares e tablets) */
-/* Responsividade para telas menores (celulares e tablets) */
+   /* Estilos para telas pequenas (menor que 768px) */
 @media (max-width: 768px) {
-  /* Ajustes no header */
+  /* Header */
   header {
     font-size: 18px;
     padding: 15px;
   }
 
-  /* Estilos para os containers */
-  #welcomeContainer, #nameContainer, #professionContainer, #idealContainer {
-    font-size: 1.2rem; /* Reduzir o tamanho da fonte */
+  /* Container de boas-vindas */
+  #welcomeContainer {
+    font-size: 2rem;
+    padding: 15px;
+    margin: 30px auto;
   }
 
+  /* Introdução - Imagem e texto */
   .intro-container {
     flex-direction: column;
-    padding: 15px;
+    align-items: center;
+  }
+
+  .profile-container {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 
   .profile-image {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
   }
 
   .intro-text {
-    max-width: 100%;
-    padding: 0 15px;
+    padding: 20px;
   }
 
   .intro-text h2 {
-    font-size: 2rem;
+    font-size: 1.6rem;
+  }
+
+  .intro-text h3 {
+    font-size: 1.3rem;
   }
 
   .intro-text p {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
-  /* Ajustes nos ícones sociais */
-  .social-under-photo a {
-    margin: 0 10px;
-  }
-
-  .social-under-photo img {
-    width: 50px;
-    height: 50px;
-  }
-
-  /* Ajustes no carousel de projetos */
-  .carousel-container {
-    margin: 20px;
-  }
-
+  /* Projetos */
   .projects-carousel {
-    flex-wrap: wrap; /* Permite que os itens se alinhem lado a lado */
     gap: 10px;
-    padding: 10px;
   }
 
   .project-card {
-    width: 45%; /* Ajuste a largura para que fiquem lado a lado */
-    min-width: 45%; /* Garante que as cartas tenham uma largura mínima adequada */
-    margin-bottom: 20px; /* Espaçamento entre os cards */
+    width: 300px;
   }
 
-  /* Ajustes para a seção de experiência, ferramentas e certificados */
-  .experience-section ul, 
-  #ferramentas-tecnologias ul, 
+  .media-container video,
+  .media-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Ferramentas e Tecnologias */
+  #ferramentas-tecnologias ul,
   #certificados ul {
-    grid-template-columns: 1fr; /* Colunas em uma linha para telas pequenas */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 
-  .experience-section li, 
-  #ferramentas-tecnologias li, 
-  #certificados li {
-    font-size: 1rem; /* Tamanho da fonte reduzido */
-  }
-
-  /* Ajustes no footer */
+  /* Footer */
   footer {
-    padding: 20px 15px;
+    padding: 20px;
   }
 
   .social-icons a {
@@ -480,68 +524,101 @@ header {
   }
 }
 
-
-/* Responsividade para telas muito pequenas (smartphones em modo retrato) */
-@media (max-width: 480px) {
-  /* Ajustes mais profundos para telas menores */
+/* Estilos para telas grandes (maior que 768px) */
+@media (min-width: 768px) {
+  /* Header */
   header {
-    font-size: 16px;
-    padding: 10px;
+    font-size: 24px;
+    padding: 20px;
   }
 
+  /* Container de boas-vindas */
+  #welcomeContainer {
+    font-size: 2.5rem;
+    padding: 25px;
+    margin: 50px auto;
+  }
+
+  /* Introdução - Imagem e texto */
   .intro-container {
-    padding: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profile-container {
+    margin-left: 300px;
+    margin-right: 20px;
   }
 
   .profile-image {
-    width: 180px;
-    height: 180px;
+    width: 350px;
+    height: 350px;
+  }
+
+  .intro-text {
+    padding: 30px;
   }
 
   .intro-text h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
+  }
+
+  .intro-text h3 {
+    font-size: 1.6rem;
   }
 
   .intro-text p {
-    font-size: 0.95rem;
+    font-size: 1.3rem;
   }
 
-  .carousel-container {
-    margin: 15px;
-  }
-
+  /* Projetos */
   .projects-carousel {
-    flex-direction: column;
-    gap: 8px;
+    gap: 20px;
   }
 
   .project-card {
-    width: 100%;
-    min-width: 100%;
+    width: 400px;
   }
 
-  .experience-section li, 
-  #ferramentas-tecnologias li, 
-  #certificados li {
-    font-size: 0.95rem;
+  .media-container video,
+  .media-container img {
+    width: 50%;
+    height: 180px;
+  }
+
+  /* Ferramentas e Tecnologias */
+  #ferramentas-tecnologias ul,
+  #certificados ul {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  /* Footer */
+  footer {
+    padding: 30px;
+  }
+
+  .social-icons a {
+    margin: 0 15px;
+  }
+
+  .social-icons img {
+    width: 48px;
+    height: 48px;
   }
 }
+
 
   </style>
 </head>
 <body>
-  <header>
+
     <!-- Container 1: Seja bem vindo + saudação -->
     <div id="welcomeContainer" class="typing-container"></div>
-    <!-- Container 2: Nome -->
-    <div id="nameContainer" class="typing-container"></div>
-    <!-- Container 3: Profissão -->
-    <div id="professionContainer" class="typing-container"></div>
-       <!-- Container 4: Profissão -->
-       <div id="idealContainer" class="typing-container"></div>
-      </header>
+
   
-  <!-- Intro com foto, redes sociais e apresentação -->
+<!-- Container com fundo branco para a introdução -->
+<div class="intro-background">
   <div class="intro-container">
     <div class="profile-container">
       <img src="imagens/fotomateus.png" alt="Foto de Mateus Soares Brito" class="profile-image">
@@ -553,17 +630,26 @@ header {
           <img src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG7.png" alt="LinkedIn">
         </a>
         <a href="https://github.com/maateusbrito" target="_blank">
-          <img src="https://img.icons8.com/color/56/000000/github.png" alt="GitHub">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
         </a>
       </div>
     </div>
 
     <div class="intro-text">
-      <h2>Um pouco sobre mim...</h2>
-      <p><h3>Sou apaixonado por tecnologia, especializado na criação de soluções inteligentes. Trabalho com integração de APIs, desenvolvimento web dinâmico e construção de sistemas escaláveis, utilizando tecnologias como Java, Javascript, React, Node.js e muito mais.</p></h3>
+      <h2>Meu nome é Mateus Soares Brito 😎</h2>
+      <h3>Agora vou falar um pouco sobre mim.. 👇</h3>
+      <p>Eu acredito que a tecnologia tem um papel fundamental em tornar a vida mais fácil e menos estressante 😌✨.</p>
+      <p>Não faz sentido perder tempo com burocracia ou tarefas repetitivas que poderiam muito bem se resolver sozinhas 📝💼.</p>
+      <p>Desde automatizar processos chatos até ajudar o meio ambiente economizando recursos 🌍💡, vejo a inovação como algo que vem para simplificar – seja algo simples, como um lembrete pra não esquecer de regar a planta (que, confesso, já está na UTI das plantas 😢🌱), ou algo mais complexo, como tornar as cidades mais sustentáveis 🚗🌱💚.</p>
+      <p>No fim das contas, eu acredito que tecnologia boa é aquela que resolve sem a gente nem perceber 😎🧠.</p>
+      <p>Porque se tem que sofrer pra usar, já começou errado 😆💻.</p>
+      <p>Pra mim, inovação não é só sobre chips e códigos 💻🔧, mas sobre facilitar a vida, otimizar o tempo e tornar tudo mais inteligente 🧠⚡ – pra gente focar no que realmente importa... tipo escolher uma série pra maratonar sem passar 40 minutos só rolando o catálogo 📱🎬😂.</p>
+      <p>Sou apaixonado por tecnologia 🔍💡. Trabalho com integração de APIs, desenvolvimento web dinâmico e construção de sistemas, utilizando tecnologias como Java, Javascript, React, Node.js e muito mais 🚀.</p>
     </div>
   </div>
-  
+</div>
+
+</header>
 
   <!-- Seção de Projetos com Carousel -->
   <section>
@@ -656,7 +742,7 @@ header {
   
   <!-- Certificados -->
   <section id="certificados">
-    <h2 class="section-title">Certificados</h2>
+    <h2 class="section-title2">Certificados</h2>
     <ul>
       <li>
         <img src="certificados/certificadoposjava.png" alt="Certificado de Pós-Graduação Java">
@@ -730,35 +816,26 @@ header {
       let hour = now.getHours();
       let greeting = "";
       if(hour >= 5 && hour < 12) {
-        greeting = "🌅 Bom dia!";
+        greeting = "Bom dia! 🌤️";
       } else if(hour >= 12 && hour < 18) {
-        greeting = "🌞 Boa tarde!";
+      greeting = " Boa tarde! 🌅";
       } else {
-        greeting = "🌙 Boa noite!";
+        greeting = " Boa noite! 🌙";
       }
       // Limpa os containers (caso estejam preenchidos de uma iteração anterior)
       document.getElementById("welcomeContainer").innerHTML = "";
-      document.getElementById("nameContainer").innerHTML = "";
-      document.getElementById("professionContainer").innerHTML = "";
-      document.getElementById("idealContainer").innerHTML = "";
+
       
       // Digita cada container em sequência sem apagar os anteriores
-      typeContainer("welcomeContainer", "👋 Olá, seja muito bem-vindo(a)!!\n " + greeting, 70, function() {
-  typeContainer("nameContainer", "✨ Eu sou Mateus Soares Brito! 😎", 70, function() {
-    typeContainer("professionContainer", "💻 Desenvolvedor Full Stack 🚀", 70, function() {
-      typeContainer("idealContainer", "🔥 Transformando ideias inovadoras em soluções inteligentes! 💡", 70, function() {
+      typeContainer("welcomeContainer", "Seja muito bem-vindo(a)!! " + greeting, 70, function() {
+
             // Após os quatro containers estarem exibidos, espera 4 segundos e reinicia a sequência
             setTimeout(function(){
               document.getElementById("welcomeContainer").innerHTML = "";
-              document.getElementById("nameContainer").innerHTML = "";
-              document.getElementById("professionContainer").innerHTML = "";
-              document.getElementById("idealContainer").innerHTML = "";
+
               startTypingSequence();
             }, 4000);
           });
-        });
-      });
-    });
     }
     
     document.addEventListener("DOMContentLoaded", function() {
