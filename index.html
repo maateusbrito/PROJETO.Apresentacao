@@ -389,6 +389,7 @@ header {
     }
 
     /* Responsividade para telas menores (celulares e tablets) */
+/* Responsividade para telas menores (celulares e tablets) */
 @media (max-width: 768px) {
   /* Ajustes no header */
   header {
@@ -440,14 +441,15 @@ header {
   }
 
   .projects-carousel {
-    flex-direction: column;
+    flex-wrap: wrap; /* Permite que os itens se alinhem lado a lado */
     gap: 10px;
     padding: 10px;
   }
 
   .project-card {
-    width: 100%;
-    min-width: 100%;
+    width: 45%; /* Ajuste a largura para que fiquem lado a lado */
+    min-width: 45%; /* Garante que as cartas tenham uma largura mínima adequada */
+    margin-bottom: 20px; /* Espaçamento entre os cards */
   }
 
   /* Ajustes para a seção de experiência, ferramentas e certificados */
@@ -477,6 +479,7 @@ header {
     height: 40px;
   }
 }
+
 
 /* Responsividade para telas muito pequenas (smartphones em modo retrato) */
 @media (max-width: 480px) {
@@ -560,6 +563,7 @@ header {
       <p><h3>Sou apaixonado por tecnologia, especializado na criação de soluções inteligentes. Trabalho com integração de APIs, desenvolvimento web dinâmico e construção de sistemas escaláveis, utilizando tecnologias como Java, Javascript, React, Node.js e muito mais.</p></h3>
     </div>
   </div>
+  
 
   <!-- Seção de Projetos com Carousel -->
   <section>
