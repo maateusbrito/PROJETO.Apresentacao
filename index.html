@@ -1,122 +1,137 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Perfil de Mateus Soares Brito, Desenvolvedor Full Stack. Explore minha experiência, projetos, ferramentas e certificados.">
+  <meta name="description"
+    content="Perfil de Mateus Soares Brito, Desenvolvedor Full Stack. Explore minha experiência, projetos, ferramentas e certificados.">
   <title>Mateus Soares Brito - Desenvolvedor Full Stack</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
-/* Estilos Básicos */
-body {
-  font-family: 'Montserrat', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(-45deg, #1c1c1e, #495d72, #2b2b2d, #607896);
-  background-size: 300% 300%;
-  animation: gradientAnimation 6s infinite alternate;
-  line-height: 1.6;
-}
+    /* Estilos Básicos */
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(-45deg, #1c1c1e, #495d72, #2b2b2d, #607896);
+      background-size: 300% 300%;
+      animation: gradientAnimation 6s infinite alternate;
+      line-height: 1.6;
+    }
 
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
 
     /* Header com 3 containers de digitação */
 
 
-/* Gradiente animado no header */
-header {
-  background: linear-gradient(45deg, #2c3e50, #34495e, #5d6d7e, #7f8c8d, #2c3e50, #34495e); /* Cores mais suaves e escuras para o gradiente */
-  background-size: 400% 400%; /* Define o tamanho do gradiente */
-  animation: gradientAnimation 15s ease infinite; /* Animação mais suave e com mais variação */
-  padding: 20px; /* Apenas para dar um espaço no header */
-  color: #fff; /* Cor do texto */
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold; /* Destaca mais o texto */
-}
+    /* Gradiente animado no header */
+    header {
+      background: linear-gradient(45deg, #2c3e50, #34495e, #5d6d7e, #7f8c8d, #2c3e50, #34495e);
+      background-size: 400% 400%;
+      animation: gradientAnimation 15s ease infinite;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
 
-/* Animação do gradiente */
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  25% {
-    background-position: 100% 50%;
-  }
-  50% {
-    background-position: 0% 50%;
-  }
-  75% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
+    /* Animação do gradiente */
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
 
+      25% {
+        background-position: 100% 50%;
+      }
 
+      50% {
+        background-position: 0% 50%;
+      }
 
-/* Estilos para os containers */
-#welcomeContainer {
-  color: #ecf0f1; /* Cor clara para contraste e elegância */
-  font-size: 2.5rem; /* Tamanho de fonte moderado para boa legibilidade */
-  font-family: 'Roboto', sans-serif; /* Fonte moderna e elegante */
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave para dar profundidade, sem exagerar */
-  line-height: 1.6; /* Mais espaçamento entre as linhas para melhorar a legibilidade */
-  padding: 25px;
-  border-radius: 15px; /* Bordas arredondadas para suavizar o visual */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra suave, elegante */
-  max-width: 800px;
-  margin: 50px auto;
-  text-align: center;
-  background-color: #34495e; /* Fundo escuro, mas não tão intenso, para um visual mais sóbrio */
-  letter-spacing: 1px; /* Espaçamento leve entre as letras */
-  transition: all 0.3s ease-in-out;
-}
+      75% {
+        background-position: 100% 50%;
+      }
 
-/* Efeito de aumento e suavização ao passar o mouse */
-#welcomeContainer:hover {
-  transform: scale(1.03); /* Leve aumento sem exagero */
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Aumenta a profundidade de forma sutil */
-}
-
-/* Animação de fade-in suave */
-#welcomeContainer {
-  animation: fadeIn 1.5s ease-out;
-}
-
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-/* Efeito para palavras destacadas */
-#welcomeContainer span {
-  color: #f39c12; /* Cor suave para destacar palavras importantes */
-  font-weight: 600; /* Destacar palavras sem exagerar */
-  text-transform: uppercase;
-  letter-spacing: 1.5px; /* Espaçamento moderado */
-  font-style: italic; /* Dá um toque mais elegante */
-}
+      100% {
+        background-position: 0% 50%;
+      }
+    }
 
 
 
-/* Linha separadora entre os containers */
-.typing-container + .typing-container {
-  border-top: 1px solid rgba(173, 126, 126, 0.336); /* Linha suave entre os containers */
-  margin-top: 5px;
-  padding-top: 5px;
-}
+    /* Estilos para os containers */
+    #welcomeContainer {
+      color: #ecf0f1;
+      font-size: 2.5rem;
+      font-family: 'Roboto', sans-serif;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      line-height: 1.6;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      margin: 50px auto;
+      text-align: center;
+      background-color: #34495e;
+      letter-spacing: 1px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    /* Efeito de aumento e suavização ao passar o mouse */
+    #welcomeContainer:hover {
+      transform: scale(1.03);
+      /* Leve aumento sem exagero */
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+      /* Aumenta a profundidade de forma sutil */
+    }
+
+    /* Animação de fade-in suave */
+    #welcomeContainer {
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* Efeito para palavras destacadas */
+    #welcomeContainer span {
+      color: #f39c12;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-style: italic;
+    }
+
+
+
+    /* Linha separadora entre os containers */
+    .typing-container+.typing-container {
+      border-top: 1px solid rgba(173, 126, 126, 0.336);
+      margin-top: 5px;
+      padding-top: 5px;
+    }
 
 
     /* Cursor piscante */
@@ -125,22 +140,30 @@ header {
       border-right: 1px solid currentColor;
       animation: blink 0.7s step-end infinite;
     }
+
     @keyframes blink {
-      0%, 100% { border-color: transparent; }
-      50% { border-color: currentColor; }
+
+      0%,
+      100% {
+        border-color: transparent;
+      }
+
+      50% {
+        border-color: currentColor;
+      }
     }
 
-/* Estilos para o container com fundo branco e imagem de fundo */
-.intro-background {
-  background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com 80% de opacidade */
-  background-image: url('https://blog.xpeducacao.com.br/wp-content/uploads/2023/01/Como-fazer-um-bom-portfolio-de-desenvolvedor-web-inspiracoes-scaled.jpg'); /* Substitua pela URL da sua imagem */
-  background-size: cover; /* A imagem cobre todo o fundo */
-  background-position: center; /* Centraliza a imagem */
-  padding: 40px 20px; /* Espaçamento interno */
-  border-radius: 15px; /* Bordas arredondadas */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  margin-bottom: 40px; /* Espaçamento inferior */
-}
+    /* Estilos para o container com fundo branco e imagem de fundo */
+    .intro-background {
+      background-color: rgba(255, 255, 255, 0.8);
+      background-image: url('https://blog.xpeducacao.com.br/wp-content/uploads/2023/01/Como-fazer-um-bom-portfolio-de-desenvolvedor-web-inspiracoes-scaled.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 40px 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
+    }
 
 
     /* Intro - foto, redes sociais e texto */
@@ -152,90 +175,100 @@ header {
       padding: 20px;
       flex-wrap: wrap;
     }
+
     .profile-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 50px; /* Espaço à esquerda */
-  margin-right: 20px; /* Espaço à direita */
-}
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 50px;
+      /* Espaço à esquerda */
+      margin-right: 20px;
+      /* Espaço à direita */
+    }
 
     .profile-image {
       width: 300px;
       height: 300px;
       border-radius: 50%;
       object-fit: cover;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
       transition: transform 0.3s;
     }
+
     .profile-image:hover {
       transform: scale(1.1);
     }
+
     .social-under-photo {
-  margin-top: 100px; /* Espaço maior abaixo da foto */
-  text-align: center;
-}
+      margin-top: 100px;
+      /* Espaço maior abaixo da foto */
+      text-align: center;
+    }
 
-.social-under-photo a {
-  margin: 0 15px; /* Aumentado o espaçamento entre os ícones */
-  display: inline-block;
-}
+    .social-under-photo a {
+      margin: 0 15px;
+      /* Aumentado o espaçamento entre os ícones */
+      display: inline-block;
+    }
 
-.social-under-photo img {
-  width: 60px; /* Ícones maiores */
-  height: 60px;
-  transition: transform 0.3s;
-}
+    .social-under-photo img {
+      width: 60px;
+      /* Ícones maiores */
+      height: 60px;
+      transition: transform 0.3s;
+    }
 
-.social-under-photo a:hover img {
-  transform: scale(1.2);
-}
+    .social-under-photo a:hover img {
+      transform: scale(1.2);
+    }
 
     .intro-text {
-  max-width: 700px;
-  text-align: center;
-  padding: 0 20px;
-  margin: 0 auto;
-  background: linear-gradient(45deg, #1c1c1c, #2c3e50);
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  padding: 30px;
-}
+      max-width: 700px;
+      text-align: center;
+      padding: 0 20px;
+      margin: 0 auto;
+      background: linear-gradient(45deg, #1c1c1c, #2c3e50);
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      padding: 30px;
+    }
 
-.intro-text h2 {
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #ffffff;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-  transition: color 0.3s ease-in-out;
-}
+    .intro-text h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #ffffff;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      transition: color 0.3s ease-in-out;
+    }
 
-.intro-text h2:hover {
-  color: #f39c12; /* Cor de destaque ao passar o mouse */
-}
+    .intro-text h2:hover {
+      color: #f39c12;
+      /* Cor de destaque ao passar o mouse */
+    }
 
-.intro-text h3 {
-  font-size: 1.4rem;
-  color: #f39c12;
-  font-weight: 500;
-  margin-top: 5px;
-  text-transform: capitalize;
-  letter-spacing: 1px;
-}
+    .intro-text h3 {
+      font-size: 1.4rem;
+      color: #f39c12;
+      font-weight: 500;
+      margin-top: 5px;
+      text-transform: capitalize;
+      letter-spacing: 1px;
+    }
 
-.intro-text p {
-  font-size: 1.3rem;
-  color: #ecf0f1;
-  margin-top: 15px;
-  line-height: 1.6;
-}
+    .intro-text p {
+      font-size: 1.3rem;
+      color: #ecf0f1;
+      margin-top: 15px;
+      line-height: 1.6;
+    }
 
-.intro-text p:hover {
-  color: #f39c12; /* Efeito hover para o parágrafo */
-  cursor: pointer;
-}
+    .intro-text p:hover {
+      color: #f39c12;
+      /* Efeito hover para o parágrafo */
+      cursor: pointer;
+    }
 
     /* Títulos de seção centralizados */
     .section-title {
@@ -247,8 +280,8 @@ header {
       border-bottom: 3px solid #3498db;
     }
 
-        /* Títulos de seção centralizados */
-        .section-title2 {
+    /* Títulos de seção centralizados */
+    .section-title2 {
       font-size: 2rem;
       color: #000000;
       text-align: center;
@@ -263,6 +296,7 @@ header {
       margin: 40px 20px;
       overflow: hidden;
     }
+
     .projects-carousel {
       display: flex;
       gap: 20px;
@@ -270,104 +304,122 @@ header {
       overflow-x: auto;
       scroll-behavior: smooth;
     }
+
     .project-card {
-      min-width: 100px; /* Largura reduzida */
+      min-width: 100px;
       width: 300px;
       background: white;
       padding: 15px;
       border-radius: 8px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
       flex-shrink: 0;
       transition: transform 0.3s;
     }
+
     .project-card:hover {
       transform: translateY(-10px);
     }
+
     .media-container {
       display: flex;
       gap: 10px;
       margin-bottom: 10px;
     }
+
     .media-container video,
     .media-container img {
       width: 100%;
       border-radius: 8px;
       object-fit: cover;
-      height: 180px; /* Altura aumentada */
+      height: 180px;
     }
+
     .project-card h3 {
       font-size: 1.4rem;
       color: #3498db;
       margin-top: 10px;
     }
+
     .project-card p {
       font-size: 0.95rem;
       color: #555;
       margin: 8px 0;
     }
+
     .project-card a {
       color: #3498db;
       text-decoration: none;
       font-weight: 600;
     }
+
     .project-card a:hover {
       text-decoration: underline;
     }
+
     .carousel-button {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      background: rgba(0,0,0,0.5);
+      background: rgba(0, 0, 0, 0.5);
       color: white;
       border: none;
       padding: 10px;
       cursor: pointer;
       z-index: 1;
     }
+
     .carousel-button.left {
       left: 0;
     }
+
     .carousel-button.right {
       right: 0;
     }
+
     /* Efeito de card para experiências, ferramentas e certificados */
-    .experience-section li, 
-    #ferramentas-tecnologias li, 
+    .experience-section li,
+    #ferramentas-tecnologias li,
     #certificados li {
       transition: transform 0.3s, box-shadow 0.3s;
     }
-    .experience-section li:hover, 
-    #ferramentas-tecnologias li:hover, 
+
+    .experience-section li:hover,
+    #ferramentas-tecnologias li:hover,
     #certificados li:hover {
       transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     }
+
     /* Experiências */
     .experience-section {
       margin: 40px 20px;
     }
+
     .experience-section ul {
       list-style: none;
       padding: 0;
       max-width: 800px;
       margin: 0 auto;
     }
+
     .experience-section li {
       background: white;
       padding: 15px;
       margin-bottom: 15px;
       border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       font-size: 1.1rem;
     }
+
     /* Ferramentas e Tecnologias */
     #ferramentas-tecnologias {
       background: white;
       padding: 40px 20px;
       margin: 40px 20px;
       border-radius: 8px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
+
     #ferramentas-tecnologias ul {
       list-style: none;
       padding: 0;
@@ -375,21 +427,24 @@ header {
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
       gap: 15px;
     }
+
     #ferramentas-tecnologias li {
       background: #f39c12;
       padding: 15px;
       border-radius: 8px;
       font-size: 1rem;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
+
     /* Certificados */
     #certificados {
       background: white;
       padding: 40px 20px;
       margin: 40px 20px;
       border-radius: 8px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
+
     #certificados ul {
       list-style: none;
       padding: 0;
@@ -397,23 +452,27 @@ header {
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
       gap: 15px;
     }
+
     #certificados li {
       background: #f5f5f5;
       padding: 15px;
       border-radius: 8px;
       font-size: 1rem;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       text-align: center;
     }
+
     #certificados li img {
       max-width: 100%;
       border-radius: 5px;
       margin-bottom: 10px;
     }
+
     #certificados li p {
       font-size: 0.9rem;
       color: #555;
     }
+
     /* Footer */
     footer {
       background: #2c3e50;
@@ -422,233 +481,251 @@ header {
       padding: 30px 20px;
       margin-top: 40px;
     }
+
     footer p {
       margin: 0;
     }
+
     .social-icons {
       margin-top: 10px;
     }
+
     .social-icons a {
       margin: 0 15px;
       transition: transform 0.3s;
     }
+
     .social-icons a:hover {
       transform: scale(1.2);
     }
+
     .social-icons img {
       width: 48px;
       height: 48px;
     }
 
     /* Estilização do modal */
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    justify-content: center;
-    align-items: center;
-  }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+    }
 
-  .modal-content {
-    max-width: 90%;
-    max-height: 90%;
-    border-radius: 10px;
-  }
+    .modal-content {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+    }
 
-  .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 40px;
-    color: white;
-    cursor: pointer;
-  }
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 40px;
+      color: white;
+      cursor: pointer;
+    }
 
     /* Responsividade para telas menores (celulares e tablets) */
-/* Responsividade para telas menores (celulares e tablets) */
-@media (max-width: 768px) {
-  /* Ajustes no header */
-  header {
-    font-size: 18px;
-    padding: 15px;
-  }
+    @media (max-width: 768px) {
 
-  /* Estilos para os containers */
-  #welcomeContainer, #nameContainer, #professionContainer, #idealContainer {
-    font-size: 1.2rem; /* Reduzir o tamanho da fonte */
-  }
+      /* Ajustes no header */
+      header {
+        font-size: 18px;
+        padding: 15px;
+      }
 
-  .intro-container {
-    flex-direction: column;
-    padding: 15px;
-  }
+      /* Estilos para os containers */
+      #welcomeContainer,
+      #nameContainer,
+      #professionContainer,
+      #idealContainer {
+        font-size: 1.2rem;
+        /* Reduzir o tamanho da fonte */
+      }
 
-  .profile-image {
-    width: 200px;
-    height: 200px;
-  }
+      .intro-container {
+        flex-direction: column;
+        padding: 15px;
+      }
 
-  .intro-text {
-    max-width: 100%;
-    padding: 0 15px;
-  }
+      .profile-image {
+        width: 200px;
+        height: 200px;
+      }
 
-  .intro-text h2 {
-    font-size: 2rem;
-  }
+      .intro-text {
+        max-width: 100%;
+        padding: 0 15px;
+      }
 
-  .intro-text p {
-    font-size: 1rem;
-  }
+      .intro-text h2 {
+        font-size: 2rem;
+      }
 
-  /* Ajustes nos ícones sociais */
-  .social-under-photo a {
-    margin: 0 10px;
-  }
+      .intro-text p {
+        font-size: 1rem;
+      }
 
-  .social-under-photo img {
-    width: 50px;
-    height: 50px;
-  }
+      /* Ajustes nos ícones sociais */
+      .social-under-photo a {
+        margin: 0 10px;
+      }
 
-  /* Ajustes no carousel de projetos */
-  .carousel-container {
-    margin: 20px;
-  }
+      .social-under-photo img {
+        width: 50px;
+        height: 50px;
+      }
 
-  .projects-carousel {
-    flex-wrap: wrap; /* Permite que os itens se alinhem lado a lado */
-    gap: 10px;
-    padding: 10px;
-  }
+      /* Ajustes no carousel de projetos */
+      .carousel-container {
+        margin: 20px;
+      }
 
-  .project-card {
-    width: 45%; /* Ajuste a largura para que fiquem lado a lado */
-    min-width: 45%; /* Garante que as cartas tenham uma largura mínima adequada */
-    margin-bottom: 20px; /* Espaçamento entre os cards */
-  }
+      .projects-carousel {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+      }
 
-  /* Ajustes para a seção de experiência, ferramentas e certificados */
-  .experience-section ul, 
-  #ferramentas-tecnologias ul, 
-  #certificados ul {
-    grid-template-columns: 1fr; /* Colunas em uma linha para telas pequenas */
-  }
-
-  .experience-section li, 
-  #ferramentas-tecnologias li, 
-  #certificados li {
-    font-size: 1rem; /* Tamanho da fonte reduzido */
-  }
-
-  /* Ajustes no footer */
-  footer {
-    padding: 20px 15px;
-  }
-
-  .social-icons a {
-    margin: 0 10px;
-  }
-
-  .social-icons img {
-    width: 40px;
-    height: 40px;
-  }
-}
+      .project-card {
+        width: 45%;
+        /* min-width: 45%; /* Garante que as cartas tenham uma largura mínima adequada */
+        margin-bottom: 20px;
+        /* Espaçamento entre os cards */
+      }
 
 
-/* Responsividade para telas muito pequenas (smartphones em modo retrato) */
-@media (max-width: 480px) {
-  /* Ajustes mais profundos para telas menores */
-  header {
-    font-size: 16px;
-    padding: 10px;
-  }
+      .experience-section ul,
+      #ferramentas-tecnologias ul,
+      #certificados ul {
+        grid-template-columns: 1fr;
+      }
 
-  .intro-container {
-    padding: 10px;
-  }
+      .experience-section li,
+      #ferramentas-tecnologias li,
+      #certificados li {
+        font-size: 1rem;
+      }
 
-  .profile-image {
-    width: 180px;
-    height: 180px;
-  }
 
-  .intro-text h2 {
-    font-size: 1.8rem;
-  }
+      footer {
+        padding: 20px 15px;
+      }
 
-  .intro-text p {
-    font-size: 0.95rem;
-  }
+      .social-icons a {
+        margin: 0 10px;
+      }
 
-  .carousel-container {
-    margin: 15px;
-  }
+      .social-icons img {
+        width: 40px;
+        height: 40px;
+      }
+    }
 
-  .projects-carousel {
-    flex-direction: column;
-    gap: 8px;
-  }
 
-  .project-card {
-    width: 100%;
-    min-width: 100%;
-  }
+    /* Responsividade para telas muito pequenas (smartphones em modo retrato) */
+    @media (max-width: 480px) {
 
-  .experience-section li, 
-  #ferramentas-tecnologias li, 
-  #certificados li {
-    font-size: 0.95rem;
-  }
-}
+      header {
+        font-size: 16px;
+        padding: 10px;
+      }
 
+      .intro-container {
+        padding: 10px;
+      }
+
+      .profile-image {
+        width: 180px;
+        height: 180px;
+      }
+
+      .intro-text h2 {
+        font-size: 1.8rem;
+      }
+
+      .intro-text p {
+        font-size: 0.95rem;
+      }
+
+      .carousel-container {
+        margin: 15px;
+      }
+
+      .projects-carousel {
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .project-card {
+        width: 100%;
+        min-width: 100%;
+      }
+
+      .experience-section li,
+      #ferramentas-tecnologias li,
+      #certificados li {
+        font-size: 0.95rem;
+      }
+    }
   </style>
 </head>
+
 <body>
 
-    <!-- Container 1: Seja bem vindo + saudação -->
-    <div id="welcomeContainer" class="typing-container"></div>
+  <!-- Container 1: Seja bem vindo + saudação -->
+  <div id="welcomeContainer" class="typing-container"></div>
 
-  
-<!-- Container com fundo branco para a introdução -->
-<div class="intro-background">
-  <div class="intro-container">
-    <div class="profile-container">
-      <img src="imagens/fotomateus.png" alt="Foto de Mateus Soares Brito" class="profile-image">
-      <div class="social-under-photo">
-        <a href="https://www.instagram.com/maateus1994" target="_blank">
-          <img src="https://imagepng.org/wp-content/uploads/2017/08/instagram-icone-icon.png" alt="Instagram">
-        </a>
-        <a href="https://www.linkedin.com/in/mateus-brito-628a13100/" target="_blank">
-          <img src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG7.png" alt="LinkedIn">
-        </a>
-        <a href="https://github.com/maateusbrito" target="_blank">
-          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
-        </a>
+
+  <!-- Container com fundo branco para a introdução -->
+  <div class="intro-background">
+    <div class="intro-container">
+      <div class="profile-container">
+        <img src="imagens/fotomateus.png" alt="Foto de Mateus Soares Brito" class="profile-image">
+        <div class="social-under-photo">
+          <a href="https://www.instagram.com/maateus1994" target="_blank">
+            <img src="https://imagepng.org/wp-content/uploads/2017/08/instagram-icone-icon.png" alt="Instagram">
+          </a>
+          <a href="https://www.linkedin.com/in/mateus-brito-628a13100/" target="_blank">
+            <img src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG7.png" alt="LinkedIn">
+          </a>
+          <a href="https://github.com/maateusbrito" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+          </a>
+        </div>
+      </div>
+
+      <div class="intro-text">
+        <h2>Meu nome é Mateus Soares Brito 😎</h2>
+        <h3>Agora vou falar um pouco sobre mim.. 👇</h3>
+        <p>Eu acredito que a tecnologia tem um papel fundamental em tornar a vida mais fácil e menos estressante 😌✨.
+        </p>
+        <p>Não faz sentido perder tempo com burocracia ou tarefas repetitivas que poderiam muito bem se resolver
+          sozinhas 📝💼.</p>
+        <p>Desde automatizar processos chatos até ajudar o meio ambiente economizando recursos 🌍💡, vejo a inovação
+          como algo que vem para simplificar – seja algo simples, como um lembrete pra não esquecer de regar a planta
+          (que, confesso, já está na UTI das plantas 😢🌱), ou algo mais complexo, como tornar as cidades mais
+          sustentáveis 🚗🌱💚.</p>
+        <p>No fim das contas, eu acredito que tecnologia boa é aquela que resolve sem a gente nem perceber 😎🧠.</p>
+        <p>Porque se tem que sofrer pra usar, já começou errado 😆💻.</p>
+        <p>Pra mim, inovação não é só sobre chips e códigos 💻🔧, mas sobre facilitar a vida, otimizar o tempo e tornar
+          tudo mais inteligente 🧠⚡ – pra gente focar no que realmente importa... tipo escolher uma série pra maratonar
+          sem passar 40 minutos só rolando o catálogo 📱🎬😂.</p>
+        <p>Sou apaixonado por tecnologia 🔍💡. Trabalho com integração de APIs, desenvolvimento web dinâmico e
+          construção de sistemas, utilizando tecnologias como Java, Javascript, React, Node.js e muito mais 🚀.</p>
       </div>
     </div>
-
-    <div class="intro-text">
-      <h2>Meu nome é Mateus Soares Brito 😎</h2>
-      <h3>Agora vou falar um pouco sobre mim.. 👇</h3>
-      <p>Eu acredito que a tecnologia tem um papel fundamental em tornar a vida mais fácil e menos estressante 😌✨.</p>
-      <p>Não faz sentido perder tempo com burocracia ou tarefas repetitivas que poderiam muito bem se resolver sozinhas 📝💼.</p>
-      <p>Desde automatizar processos chatos até ajudar o meio ambiente economizando recursos 🌍💡, vejo a inovação como algo que vem para simplificar – seja algo simples, como um lembrete pra não esquecer de regar a planta (que, confesso, já está na UTI das plantas 😢🌱), ou algo mais complexo, como tornar as cidades mais sustentáveis 🚗🌱💚.</p>
-      <p>No fim das contas, eu acredito que tecnologia boa é aquela que resolve sem a gente nem perceber 😎🧠.</p>
-      <p>Porque se tem que sofrer pra usar, já começou errado 😆💻.</p>
-      <p>Pra mim, inovação não é só sobre chips e códigos 💻🔧, mas sobre facilitar a vida, otimizar o tempo e tornar tudo mais inteligente 🧠⚡ – pra gente focar no que realmente importa... tipo escolher uma série pra maratonar sem passar 40 minutos só rolando o catálogo 📱🎬😂.</p>
-      <p>Sou apaixonado por tecnologia 🔍💡. Trabalho com integração de APIs, desenvolvimento web dinâmico e construção de sistemas, utilizando tecnologias como Java, Javascript, React, Node.js e muito mais 🚀.</p>
-    </div>
   </div>
-</div>
 
-</header>
+  </header>
 
   <!-- Seção de Projetos com Carousel -->
   <section>
@@ -663,7 +740,7 @@ header {
               <source src="videos/aprecentacaoportifolio1.mp4" type="video/mp4">
               Seu navegador não suporta o vídeo.
             </video>
-       <!--      <img src="imagens/portifolio1.png" alt="Site para Corretor Imobiliário">-->
+            <!--      <img src="imagens/portifolio1.png" alt="Site para Corretor Imobiliário">-->
           </div>
           <h3>Site para um Corretor Imobiliário</h3>
           <p>Plataforma personalizada para anúncios, proporcionando experiência fluída para os clientes.</p>
@@ -676,7 +753,7 @@ header {
               <source src="videos/apresentacaoportifolio2.mp4" type="video/mp4">
               Seu navegador não suporta o vídeo.
             </video>
-          <!--   <img src="imagens/portifolio2.png" alt="TaskMinder ERP">-->
+            <!--   <img src="imagens/portifolio2.png" alt="TaskMinder ERP">-->
           </div>
           <h3>TaskMinder - Sistema de Gestão de Tarefas</h3>
           <p>Sistema completo com lembretes e chatbot para auxiliar no dia a dia.</p>
@@ -686,22 +763,22 @@ header {
       <button class="carousel-button right" onclick="scrollProjects(1)">&gt;</button>
     </div>
   </section>
-  
+
   <!-- Experiências Acadêmicas -->
   <section id="experiencias-academicas" class="experience-section">
     <h2 class="section-title">Graduações</h2>
     <ul>
       <li><strong>Unicesumar</strong> - Pós-Graduação Desenvolvimento de aplicativos com Java (2024-2025)</li>
-      <li><strong>Unicesumar</strong> - Bacharelado em Engenharia de software  (2023 - Conclusão em 2026)</li>
-      <li><strong>Univel</strong> - Graduação em Gestão Comercial  (2018-2020)</li>
-      <li><strong>Univel</strong> - Graduação em Logistica  (2015-2017)</li>
+      <li><strong>Unicesumar</strong> - Bacharelado em Engenharia de software (2023 - Conclusão em 2026)</li>
+      <li><strong>Univel</strong> - Graduação em Gestão Comercial (2018-2020)</li>
+      <li><strong>Univel</strong> - Graduação em Logistica (2015-2017)</li>
 
 
     </ul>
 
     <h2 class="section-title">Cursos</h2>
     <ul>
-      <li><strong>Unioeste</strong> - Curso de Inglês PEL  (2024-2026)</li>
+      <li><strong>Unioeste</strong> - Curso de Inglês PEL (2024-2026)</li>
       <li><strong>Alura</strong> - Java - Aplicações (2025)</li>
       <li><strong>Alura</strong> - Lógica de Programação (2025)</li>
       <li><strong>Alura</strong> - Oracle Database (2025)</li>
@@ -714,7 +791,7 @@ header {
 
     </ul>
   </section>
-  
+
   <!-- Experiências Profissionais -->
   <section id="experiencias-profissionais" class="experience-section">
     <h2 class="section-title">Experiências Profissionais</h2>
@@ -723,7 +800,7 @@ header {
       <li><strong>Bocchi Atacado</strong> - Gerente Comercial (2014-2024)</li>
     </ul>
   </section>
-  
+
   <!-- Ferramentas e Tecnologias -->
   <section id="ferramentas-tecnologias">
     <h2 class="section-title2">Ferramentas e Tecnologias</h2>
@@ -738,37 +815,42 @@ header {
       <li><strong>AWS:</strong> Infraestrutura em nuvem para escalabilidade e performance.</li>
     </ul>
   </section>
-  
+
   <!-- Certificados -->
 
   <!-- Modal para exibição em tela cheia -->
-<div id="modalCertificado" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="imgModal">
-</div>
+  <div id="modalCertificado" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="imgModal">
+  </div>
 
   <section id="certificados">
     <h2 class="section-title2">Certificados</h2>
     <ul>
       <li>
         <img src="certificados/certificadoposjava.png" alt="Certificado de Pós-Graduação Java">
-        <p><strong>Pós-Graduação em Java:</strong> Aprendizados em padrões de projeto, programação orientada a objetos e arquitetura de software.</p>
+        <p><strong>Pós-Graduação em Java:</strong> Aprendizados em padrões de projeto, programação orientada a objetos e
+          arquitetura de software.</p>
       </li>
       <li>
-        <img src="certificados/certificadoposjavaprimeiraaplicacao.png" alt="Certificado de Pós-Graduação Java - Primeira Aplicação">
+        <img src="certificados/certificadoposjavaprimeiraaplicacao.png"
+          alt="Certificado de Pós-Graduação Java - Primeira Aplicação">
         <p><strong>Java - Projetos:</strong> Desenvolvimento de aplicações Java, boas práticas e primeiros projetos.</p>
       </li>
       <li>
         <img src="certificados/certificadologicaprogramacao.png" alt="Certificado de Lógica de Programação">
-        <p><strong>Lógica de Programação:</strong> Fundamentos da programação, estrutura de controle, variáveis e algoritmos básicos.</p>
+        <p><strong>Lógica de Programação:</strong> Fundamentos da programação, estrutura de controle, variáveis e
+          algoritmos básicos.</p>
       </li>
       <li>
         <img src="certificados/certificadooracledatabase.png" alt="Certificado de Oracle Database">
-        <p><strong>Oracle Database:</strong> Administração de banco de dados, modelagem e otimização de consultas SQL.</p>
+        <p><strong>Oracle Database:</strong> Administração de banco de dados, modelagem e otimização de consultas SQL.
+        </p>
       </li>
       <li>
         <img src="certificados/certificadojavascript.png" alt="Certificado de JavaScript">
-        <p><strong>JavaScript:</strong> Programação assíncrona, manipulação do DOM e conceitos fundamentais da linguagem.</p>
+        <p><strong>JavaScript:</strong> Programação assíncrona, manipulação do DOM e conceitos fundamentais da
+          linguagem.</p>
       </li>
       <li>
         <img src="certificados/certificadopostgresql.png" alt="Certificado de PostgreSQL">
@@ -776,13 +858,14 @@ header {
       </li>
       <li>
         <img src="certificados/certificadopostgresqlintroducao.png" alt="Certificado de Introdução ao PostgreSQL">
-        <p><strong>Introdução ao PostgreSQL:</strong> Fundamentos do PostgreSQL, estrutura de tabelas e comandos básicos SQL.</p>
+        <p><strong>Introdução ao PostgreSQL:</strong> Fundamentos do PostgreSQL, estrutura de tabelas e comandos básicos
+          SQL.</p>
       </li>
-      
+
       <!-- Adicione outros certificados se necessário -->
     </ul>
   </section>
-  
+
   <footer>
     <div class="social-icons">
       <a href="https://www.instagram.com/maateus1994" target="_blank">
@@ -797,7 +880,7 @@ header {
     </div>
     <p>&copy; 2025 Mateus Soares Brito - Todos os direitos reservados.</p>
   </footer>
-  
+
   <script>
     // Função para digitar o texto em um container sem apagar outros
     function typeContainer(containerId, text, charDelay, callback) {
@@ -809,45 +892,45 @@ header {
           i++;
           setTimeout(typeChar, charDelay);
         } else {
-          if(callback) callback();
+          if (callback) callback();
         }
       }
       typeChar();
     }
-    
+
     // Função para executar a sequência completa
     function startTypingSequence() {
       // Define saudação dinâmica
       let now = new Date();
       let hour = now.getHours();
       let greeting = "";
-      if(hour >= 5 && hour < 12) {
+      if (hour >= 5 && hour < 12) {
         greeting = "Bom dia! 🌤️";
-      } else if(hour >= 12 && hour < 18) {
-      greeting = " Boa tarde! 🌅";
+      } else if (hour >= 12 && hour < 18) {
+        greeting = " Boa tarde! 🌅";
       } else {
         greeting = " Boa noite! 🌙";
       }
       // Limpa os containers (caso estejam preenchidos de uma iteração anterior)
       document.getElementById("welcomeContainer").innerHTML = "";
 
-      
+
       // Digita cada container em sequência sem apagar os anteriores
-      typeContainer("welcomeContainer", "Seja muito bem-vindo(a)!! " + greeting, 70, function() {
+      typeContainer("welcomeContainer", "Seja muito bem-vindo(a)!! " + greeting, 70, function () {
 
-            // Após os quatro containers estarem exibidos, espera 4 segundos e reinicia a sequência
-            setTimeout(function(){
-              document.getElementById("welcomeContainer").innerHTML = "";
+        // Após os quatro containers estarem exibidos, espera 4 segundos e reinicia a sequência
+        setTimeout(function () {
+          document.getElementById("welcomeContainer").innerHTML = "";
 
-              startTypingSequence();
-            }, 4000);
-          });
+          startTypingSequence();
+        }, 4000);
+      });
     }
-    
-    document.addEventListener("DOMContentLoaded", function() {
+
+    document.addEventListener("DOMContentLoaded", function () {
       startTypingSequence();
     });
-    
+
     // Função para navegação do carrossel
     function scrollProjects(direction) {
       const carousel = document.getElementById("projectsCarousel");
@@ -856,37 +939,38 @@ header {
     }
 
     document.addEventListener("DOMContentLoaded", function () {
-    const modal = document.getElementById("modalCertificado");
-    const modalImg = document.getElementById("imgModal");
-    const closeModal = document.querySelector(".close");
+      const modal = document.getElementById("modalCertificado");
+      const modalImg = document.getElementById("imgModal");
+      const closeModal = document.querySelector(".close");
 
-    // Adiciona evento de clique a todas as imagens de certificado
-    document.querySelectorAll("#certificados img").forEach(img => {
-      img.addEventListener("click", function () {
-        modal.style.display = "flex";
-        modalImg.src = this.src;
+      // Adiciona evento de clique a todas as imagens de certificado
+      document.querySelectorAll("#certificados img").forEach(img => {
+        img.addEventListener("click", function () {
+          modal.style.display = "flex";
+          modalImg.src = this.src;
+        });
+      });
+
+      // Fecha o modal ao clicar no botão de fechar
+      closeModal.addEventListener("click", function () {
+        modal.style.display = "none";
+      });
+
+      // Fecha o modal ao clicar fora da imagem
+      modal.addEventListener("click", function (event) {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+
+      // Fecha o modal ao pressionar a tecla "Esc"
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          modal.style.display = "none";
+        }
       });
     });
-
-    // Fecha o modal ao clicar no botão de fechar
-    closeModal.addEventListener("click", function () {
-      modal.style.display = "none";
-    });
-
-    // Fecha o modal ao clicar fora da imagem
-    modal.addEventListener("click", function (event) {
-      if (event.target === modal) {
-        modal.style.display = "none";
-      }
-    });
-
-    // Fecha o modal ao pressionar a tecla "Esc"
-    document.addEventListener("keydown", function (event) {
-      if (event.key === "Escape") {
-        modal.style.display = "none";
-      }
-    });
-  });
   </script>
 </body>
+
 </html>
