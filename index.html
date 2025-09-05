@@ -533,6 +533,21 @@
       cursor: pointer;
     }
 
+    /* Converte com magia o idioma kk */
+  .hover-translate {
+    cursor: pointer;
+    transition: opacity 0.3s ease; /* suavidade na opacidade */
+    display: inline-block;
+  }
+
+  .hover-translate.fade-out {
+    opacity: 0;
+  }
+
+  .hover-translate.fade-in {
+    opacity: 1;
+  }
+
     /* Responsividade para telas menores (celulares e tablets) */
     @media (max-width: 768px) {
 
@@ -703,27 +718,45 @@
         </div>
       </div>
 
-      <div class="intro-text">
-        <h2>Meu nome é Mateus Soares Brito 😎</h2>
-        <h3>Agora vou falar um pouco sobre mim.. 👇</h3>
-        <p>Eu acredito que a tecnologia tem um papel fundamental em tornar a vida mais fácil e menos estressante 😌✨.
-        </p>
-        <p>Não faz sentido perder tempo com burocracia ou tarefas repetitivas que poderiam muito bem se resolver
-          sozinhas 📝💼.</p>
-        <p>Desde automatizar processos chatos até ajudar o meio ambiente economizando recursos 🌍💡, vejo a inovação
-          como algo que vem para simplificar – seja algo simples, como um lembrete pra não esquecer de regar a planta
-          (que, confesso, já está na UTI das plantas 😢🌱), ou algo mais complexo, como tornar as cidades mais
-          sustentáveis 🚗🌱💚.</p>
-        <p>No fim das contas, eu acredito que tecnologia boa é aquela que resolve sem a gente nem perceber 😎🧠.</p>
-        <p>Porque se tem que sofrer pra usar, já começou errado 😆💻.</p>
-        <p>Pra mim, inovação não é só sobre chips e códigos 💻🔧, mas sobre facilitar a vida, otimizar o tempo e tornar
-          tudo mais inteligente 🧠⚡ – pra gente focar no que realmente importa... tipo escolher uma série pra maratonar
-          sem passar 40 minutos só rolando o catálogo 📱🎬😂.</p>
-        <p>Sou apaixonado por tecnologia 🔍💡. Trabalho com integração de APIs, desenvolvimento web dinâmico e
-          construção de sistemas, utilizando tecnologias como Java, Javascript, React, Node.js e muito mais 🚀.</p>
-      </div>
-    </div>
+<div class="intro-text">
+  <h2 class="hover-translate" data-translate="My name is Mateus Soares Brito">
+    Meu nome é Mateus Soares Brito
+  </h2>
+
+  <h3 class="hover-translate" data-translate="Now I’m going to tell you a little about myself.. 👇">
+    Agora vou falar um pouco sobre mim.. 👇
+  </h3>
+
+  <p class="hover-translate" data-translate="I believe that technology plays a fundamental role in making life easier and less stressful.">
+    Eu acredito que a tecnologia tem um papel fundamental em tornar a vida mais fácil e menos estressante.
+  </p>
+
+  <p class="hover-translate" data-translate="From automating repetitive processes to helping the environment by saving resources, I see innovation as something that comes to simplify life — whether something simple, like a reminder not to forget to water the plants, or something more complex, like making cities more sustainable 🚗🌱💚.">
+    Desde automatizar processos repetitivos, até ajudar o meio ambiente economizando recursos, vejo a inovação
+    como algo que vem para simplificar, seja algo simples, como um lembrete pra não esquecer de regar as plantas,
+    ou algo mais complexo, como tornar as cidades mais sustentáveis 🚗🌱💚.
+  </p>
+
+  <p class="hover-translate" data-translate="In the end, I believe that good technology is the one that solves problems without us even noticing.">
+    No fim das contas, eu acredito que tecnologia boa é aquela que resolve sem a gente nem perceber.
+  </p>
+
+  <p class="hover-translate" data-translate="Because if you have to suffer to use it, it’s already wrong 😆.">
+    Porque se tem que sofrer pra usar, já começou errado 😆.
+  </p>
+
+  <p class="hover-translate" data-translate="For me, innovation is not just about chips and code, but about making life easier, optimizing time, and making everything smarter so we can focus on what really matters... Family, friends, and enjoying moments together.">
+    Pra mim, inovação não é só sobre chips e códigos, mas sobre facilitar a vida, otimizar o tempo e tornar
+    tudo mais inteligente pra gente focar no que realmente importa... Familia, amigos e aproveitar os momentos juntos.
+  </p>
+
+  <p class="hover-translate" data-translate="I am passionate about technology. I work with API integration, web development, and system building, using technologies like Java, JavaScript, React, Node.js, and much more 🚀">
+    Sou apaixonado por tecnologia. Trabalho com integração de APIs, desenvolvimento web e
+    construção de sistemas, utilizando tecnologias como Java, Javascript, React, Node.js e muito mais 🚀
+  </p>
+</div>
   </div>
+</div>
 
   </header>
 
@@ -758,6 +791,19 @@
           <h3>TaskMinder - Sistema de Gestão de Tarefas</h3>
           <p>Sistema completo com lembretes e chatbot para auxiliar no dia a dia.</p>
           <a href="https://apptaskminder.netlify.app/" target="_blank">Veja o Projeto</a>
+    </div>
+            <!-- Projeto 3: Vídeo + Imagem -->
+        <div class="project-card">
+          <div class="media-container">
+            <video controls>
+              <source src="videos/apresentacaoportifolio3.mp4" type="video/mp4">
+              Seu navegador não suporta o vídeo.
+            </video>
+            <!--   <img src="imagens/portifolio3.png" alt="Lexamanage">-->
+          </div>
+          <h3>LexManage - Sistema de Gestão de clientes</h3>
+          <p>Sistema para cadastro e gerenciamento de clientes.</p>
+          <a href="https://github.com/maateusbrito/LexManege" target="_blank">Veja mais sobre o Projeto</a>
         </div>
       </div>
       <button class="carousel-button right" onclick="scrollProjects(1)">&gt;</button>
@@ -970,6 +1016,21 @@
         }
       });
     });
+
+
+          // Converte com magia o idioma kkk
+      document.querySelectorAll('.hover-translate').forEach(el => {
+    const originalText = el.innerText;
+    const translatedText = el.dataset.translate;
+
+    el.addEventListener('mouseenter', () => {
+      el.innerText = translatedText;
+    });
+
+    el.addEventListener('mouseleave', () => {
+      el.innerText = originalText;
+    });
+  });
   </script>
 </body>
 
